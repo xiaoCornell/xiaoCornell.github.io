@@ -1,0 +1,316 @@
+{
+  "synced_at": "2026-03-11T15:37:16+00:00",
+  "author": {
+    "recid": "2163140",
+    "name": "Xiao Wang",
+    "bai": "X.Wang.318",
+    "orcid": "0000-0003-2898-3355",
+    "profile_url": "https://inspirehep.net/authors/2163140?ui-citation-summary=true"
+  },
+  "publication_count": 14,
+  "peer_reviewed_count": 10,
+  "publications": [
+    {
+      "recid": "3123648",
+      "title": "Controlled jump in the Clifford hierarchy",
+      "year": "2026",
+      "authors_html": "Yichen Xu, <strong>Xiao Wang</strong>",
+      "venue": "arXiv:2602.22201",
+      "citation_count": 0,
+      "peer_reviewed": false,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2602.22201"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/3123648"
+        }
+      ]
+    },
+    {
+      "recid": "3089387",
+      "title": "Probing false vacuum decay and bubble nucleation in a Rydberg atom array",
+      "year": "2025",
+      "authors_html": "Yu-Xin Chao, Peiyun Ge, Zhen-Xing Hua, Chen Jia, <strong>Xiao Wang</strong>, Xinhui Liang, Zongpei Yue, Rong Lu, Meng Khoon Tey, Xiao Wang, Li You",
+      "venue": "arXiv:2512.04637",
+      "citation_count": 2,
+      "peer_reviewed": false,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2512.04637"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/3089387"
+        }
+      ]
+    },
+    {
+      "recid": "3084655",
+      "title": "Numerical renormalization group integrated Hamiltonian truncation: Toward generic deformation of integrable lattice models",
+      "year": "2025",
+      "authors_html": "Xiaodong He, <strong>Xiao Wang</strong>, Jianda Wu",
+      "venue": "arXiv:2511.13218",
+      "citation_count": 0,
+      "peer_reviewed": false,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2511.13218"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/3084655"
+        }
+      ]
+    },
+    {
+      "recid": "2903499",
+      "title": "Many-body quantum geometry in time-dependent quantum systems with emergent quantum field theory instantaneously",
+      "year": "2025",
+      "authors_html": "<strong>Xiao Wang</strong>, Xiaodong He, Jianda Wu",
+      "venue": "Phys. Rev. B 112, L201102 (2025)",
+      "citation_count": 4,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2503.18396"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/rw2m-33v6"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2903499"
+        }
+      ]
+    },
+    {
+      "recid": "2821975",
+      "title": "Magnetization oscillations in a periodically driven transverse field Ising chain",
+      "year": "2024",
+      "authors_html": "<strong>Xiao Wang</strong>, Masaki Oshikawa, Márton Kormos, Jianda Wu",
+      "venue": "Phys. Rev. B 110, 195101 (2024)",
+      "citation_count": 6,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2408.13725"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/PhysRevB.110.195101"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2821975"
+        }
+      ]
+    },
+    {
+      "recid": "2770308",
+      "title": "Emergent $D_8^{(1)}$ spectrum and topological soliton excitation in CoNb$_2$O$_6$",
+      "year": "2024",
+      "authors_html": "Ning Xi, <strong>Xiao Wang</strong>, Yunjing Gao, Yunfeng Jiang, Rong Yu, Jianda Wu",
+      "venue": "Phys. Rev. B 112, L241104 (2025)",
+      "citation_count": 8,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2403.10785"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/f32m-kkzm"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2770308"
+        }
+      ]
+    },
+    {
+      "recid": "2759602",
+      "title": "Spin dynamics and dark particle in a weak-coupled quantum Ising ladder with $\\mathcal{D}_8^{(1)}$ spectrum",
+      "year": "2024",
+      "authors_html": "Yunjing Gao, <strong>Xiao Wang</strong>, Ning Xi, Yunfeng Jiang, Rong Yu, Jianda Wu",
+      "venue": "Phys. Rev. B 111, L201117 (2025)",
+      "citation_count": 9,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2402.11229"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/PhysRevB.111.L201117"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2759602"
+        }
+      ]
+    },
+    {
+      "recid": "2684373",
+      "title": "Spin dynamics of the $E_8$ particles",
+      "year": "2023",
+      "authors_html": "<strong>Xiao Wang</strong>, Konrad Puzniak, Karin Schmalzl, Christian Balz, Masaaki Matsuda, Akira Okutani, Masayuki Hagiwara, Jie Ma, Jianda Wu, Bella Lake",
+      "venue": "Sci.Bull. 69 2885 (2024)",
+      "citation_count": 10,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2308.00249"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1016/j.scib.2024.07.040"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2684373"
+        }
+      ]
+    },
+    {
+      "recid": "2670977",
+      "title": "Stability and fine structure of symmetry-enriched quantum criticality in a spin ladder triangular model",
+      "year": "2023",
+      "authors_html": "<strong>Xiao Wang</strong>, Linhao Li, Jianda Wu",
+      "venue": "arXiv:2306.11446",
+      "citation_count": 10,
+      "peer_reviewed": false,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2306.11446"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2670977"
+        }
+      ]
+    },
+    {
+      "recid": "2623426",
+      "title": "Magnetic excitations in the one-dimensional Heisenberg-Ising model with external fields and their experimental realizations",
+      "year": "2023",
+      "authors_html": "Jiahao Yang, <strong>Xiao Wang</strong>, Jianda Wu",
+      "venue": "J.Phys.A 56 013001 (2023)",
+      "citation_count": 9,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2301.05823"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1088/1751-8121/acad48"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2623426"
+        }
+      ]
+    },
+    {
+      "recid": "1868255",
+      "title": "Cascade of singularities in the spin dynamics of a perturbed quantum critical Ising chain",
+      "year": "2021",
+      "authors_html": "<strong>Xiao Wang</strong>, Haiyuan Zou, Kristóf Hódsági, Márton Kormos, Gábor Takács, Jianda Wu",
+      "venue": "Phys. Rev. B 103, 235117 (2021)",
+      "citation_count": 19,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2103.09128"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/PhysRevB.103.235117"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/1868255"
+        }
+      ]
+    },
+    {
+      "recid": "2163412",
+      "title": "From the transverse field Ising chain to the quantum <i>E</i><sub>8</sub> integrable model",
+      "year": "2021",
+      "authors_html": "<strong>Xiao Wang</strong>, Jia-Hao Yang, Jian-Da Wu",
+      "venue": "Acta Phys.Sin. 70 230504 (2021)",
+      "citation_count": 1,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.7498/aps.70.20211836"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/2163412"
+        }
+      ]
+    },
+    {
+      "recid": "1798334",
+      "title": "Observation of E8 Particles in an Ising Chain Antiferromagnet",
+      "year": "2020",
+      "authors_html": "Zhao Zhang, Kirill Amelin, <strong>Xiao Wang</strong>, Haiyuan Zou, Jiahao Yang, Urmas Nagel, Toomas Rõõm, Tusharkanti Dey, Agustinus Agung Nugroho, Thomas Lorenz, Jianda Wu, Zhe Wang",
+      "venue": "Phys. Rev. B 101, 220411 (2020)",
+      "citation_count": 32,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2005.13772"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/PhysRevB.101.220411"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/1798334"
+        }
+      ]
+    },
+    {
+      "recid": "1798063",
+      "title": "$E_8$ Spectra of Quasi-one-dimensional Antiferromagnet BaCo$_2$V$_2$O$_8$ under Transverse Field",
+      "year": "2020",
+      "authors_html": "Haiyuan Zou, Y. Cui, <strong>X. Wang</strong>, Z. Zhang, J. Yang, G. Xu, A. Okutani, M. Hagiwara, M. Matsuda, G. Wang, G. Mussardo, K. Hódsági, et al.",
+      "venue": "Phys. Rev. Lett. 127, 077201 (2021)",
+      "citation_count": 41,
+      "peer_reviewed": true,
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2005.13302"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/PhysRevLett.127.077201"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/1798063"
+        }
+      ]
+    }
+  ]
+}

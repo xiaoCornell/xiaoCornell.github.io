@@ -1,0 +1,39 @@
+﻿name: Sync INSPIRE Publications
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 13 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-publications:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync publications from INSPIRE-HEP
+        run: python tools/sync_inspire_publications.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet; then
+            echo "No publication changes detected."
+            exit 0
+          fi
+
+          git add data/publications.json publications.html
+          git commit -m "Sync publications from INSPIRE-HEP"
+          git push
