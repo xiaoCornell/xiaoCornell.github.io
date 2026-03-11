@@ -43,6 +43,7 @@
       <div class="hero-actions">
         <a class="button" href="https://scholar.google.com/citations?user=BlzdjS4AAAAJ&amp;hl=en">Google Scholar</a>
         <a class="button is-ghost" href="https://inspirehep.net/authors/2163140?ui-citation-summary=true">INSPIRE-HEP</a>
+        <a class="button is-ghost" href="https://www.lassp.cornell.edu/people/xiao-wang">Cornell LASSP</a>
       </div>
     </section>
 
