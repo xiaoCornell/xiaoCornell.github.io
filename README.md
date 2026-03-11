@@ -13,6 +13,10 @@ GitHub Pages source for Xiao Wang's personal homepage, migrated from the origina
 - `tools/sync_inspire_publications.py`: INSPIRE-HEP sync script
 - `data/publications.json`: generated publication data
 - `.github/workflows/sync-inspire-publications.yml`: scheduled sync workflow
+- `tools/generate_arxiv_daily.py`: arXiv daily digest generator
+- `arxiv_daily_config.json`: arXiv daily configuration
+- `arxiv_daily/`: generated daily digest archive
+- `.github/workflows/update-arxiv-daily.yml`: scheduled arXiv daily workflow
 
 ## Local preview
 
@@ -39,9 +43,22 @@ This will:
 - regenerate `data/publications.json`
 - regenerate `publications.html`
 
+## Manual arXiv daily generation
+
+Run this from the repository root:
+
+```powershell
+python -m pip install -r requirements-arxiv-daily.txt
+python tools/generate_arxiv_daily.py
+```
+
+This will regenerate `arxiv_daily/latest.html`, `arxiv_daily/index.html`, and the per-date archive directory.
+
 ## Scheduled sync
 
 GitHub Actions runs the publication sync automatically every Monday at `13:17 UTC`, and you can also trigger it manually from the Actions tab.
+
+A separate workflow updates the arXiv daily archive every day at `13:15 UTC`.
 
 ## Publish
 
