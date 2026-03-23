@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-03-16T16:44:24+00:00",
+  "synced_at": "2026-03-23T16:14:20+00:00",
   "author": {
     "recid": "2163140",
     "name": "Xiao Wang",
@@ -35,7 +35,7 @@
       "year": "2025",
       "authors_html": "Yu-Xin Chao, Peiyun Ge, Zhen-Xing Hua, Chen Jia, <strong>Xiao Wang</strong>, Xinhui Liang, Zongpei Yue, Rong Lu, Meng Khoon Tey, Xiao Wang, Li You",
       "venue": "arXiv:2512.04637",
-      "citation_count": 2,
+      "citation_count": 3,
       "peer_reviewed": false,
       "links": [
         {
@@ -207,7 +207,7 @@
       "year": "2023",
       "authors_html": "Jiahao Yang, <strong>Xiao Wang</strong>, Jianda Wu",
       "venue": "J.Phys.A 56 013001 (2023)",
-      "citation_count": 9,
+      "citation_count": 10,
       "peer_reviewed": true,
       "links": [
         {
@@ -272,7 +272,7 @@
       "year": "2020",
       "authors_html": "Zhao Zhang, Kirill Amelin, <strong>Xiao Wang</strong>, Haiyuan Zou, Jiahao Yang, Urmas Nagel, Toomas Rõõm, Tusharkanti Dey, Agustinus Agung Nugroho, Thomas Lorenz, Jianda Wu, Zhe Wang",
       "venue": "Phys. Rev. B 101, 220411 (2020)",
-      "citation_count": 32,
+      "citation_count": 33,
       "peer_reviewed": true,
       "links": [
         {
@@ -295,7 +295,7 @@
       "year": "2020",
       "authors_html": "Haiyuan Zou, Y. Cui, <strong>X. Wang</strong>, Z. Zhang, J. Yang, G. Xu, A. Okutani, M. Hagiwara, M. Matsuda, G. Wang, G. Mussardo, K. Hódsági, et al.",
       "venue": "Phys. Rev. Lett. 127, 077201 (2021)",
-      "citation_count": 41,
+      "citation_count": 42,
       "peer_reviewed": true,
       "links": [
         {
