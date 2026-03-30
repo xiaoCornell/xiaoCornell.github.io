@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-03-23T16:14:20+00:00",
+  "synced_at": "2026-03-30T16:38:10+00:00",
   "author": {
     "recid": "2163140",
     "name": "Xiao Wang",
@@ -8,7 +8,7 @@
     "profile_url": "https://inspirehep.net/authors/2163140?ui-citation-summary=true"
   },
   "publication_count": 14,
-  "peer_reviewed_count": 10,
+  "peer_reviewed_count": 11,
   "publications": [
     {
       "recid": "3123648",
@@ -16,7 +16,7 @@
       "year": "2026",
       "authors_html": "Yichen Xu, <strong>Xiao Wang</strong>",
       "venue": "arXiv:2602.22201",
-      "citation_count": 0,
+      "citation_count": 2,
       "peer_reviewed": false,
       "links": [
         {
@@ -34,13 +34,17 @@
       "title": "Probing false vacuum decay and bubble nucleation in a Rydberg atom array",
       "year": "2025",
       "authors_html": "Yu-Xin Chao, Peiyun Ge, Zhen-Xing Hua, Chen Jia, <strong>Xiao Wang</strong>, Xinhui Liang, Zongpei Yue, Rong Lu, Meng Khoon Tey, Xiao Wang, Li You",
-      "venue": "arXiv:2512.04637",
+      "venue": "Phys.Rev.Lett. 136 120407 (2026)",
       "citation_count": 3,
-      "peer_reviewed": false,
+      "peer_reviewed": true,
       "links": [
         {
           "label": "arXiv",
           "url": "https://arxiv.org/abs/2512.04637"
+        },
+        {
+          "label": "DOI",
+          "url": "https://doi.org/10.1103/kqzq-fnr4"
         },
         {
           "label": "INSPIRE",
