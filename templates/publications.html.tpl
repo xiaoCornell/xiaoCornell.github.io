@@ -47,7 +47,6 @@
     <section class="section shell">
       <div class="section-head reveal">
         <p class="eyebrow">Journal Club Highlight</p>
-        <h2>Selected discussion feature</h2>
       </div>
       <article class="feature-card reveal">
         <div>
@@ -64,7 +63,6 @@
     <section class="section shell">
       <div class="section-head reveal">
         <p class="eyebrow">Publication List</p>
-        <h2>Automatically synced from INSPIRE-HEP</h2>
       </div>
       <div class="stack-list">
 __PUBLICATION_ITEMS__

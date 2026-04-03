@@ -366,6 +366,13 @@ h3 {
   max-width: 16ch;
 }
 
+body[data-page="cv"] .page-hero h1,
+body[data-page="publications"] .page-hero h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  white-space: nowrap;
+  letter-spacing: -0.03em;
+}
+
 .card-grid,
 .card-grid-2,
 .list-grid,
