@@ -26,7 +26,7 @@
         <a data-nav="cv" href="cv.html">CV</a>
         <a data-nav="publications" href="publications.html">Publications</a>
         <a data-nav="seminars" href="seminars.html">Seminars</a>
-        <a href="arxiv_daily/index.html">arXiv Daily</a>
+        <a href="https://laserwong.github.io/arxiv_daily/index.html">arXiv Daily</a>
       </nav>
       <a class="nav-cta" href="mailto:xw753@cornell.edu">Contact</a>
     </div>
