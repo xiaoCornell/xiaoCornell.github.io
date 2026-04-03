@@ -36,11 +36,7 @@
     <section class="page-hero shell reveal">
       <p class="eyebrow">Publications</p>
       <h1>Research output and selected papers</h1>
-      <p>
-        This page is automatically synchronized from INSPIRE-HEP. It currently shows <strong>__PUBLICATION_COUNT__</strong>
-        records, including <strong>__PEER_REVIEWED_COUNT__</strong> entries with journal references.
-      </p>
-      <p class="muted">Last sync: __SYNCED_AT__ UTC · Author profile: __AUTHOR_LABEL__</p>
+      <p class="muted">Last update time: __SYNCED_AT__ UTC</p>
       <div class="hero-actions">
         <a class="button" href="https://scholar.google.com/citations?user=BlzdjS4AAAAJ&amp;hl=en">Google Scholar</a>
         <a class="button is-ghost" href="https://inspirehep.net/authors/2163140?ui-citation-summary=true">INSPIRE-HEP</a>
