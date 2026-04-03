@@ -1,5 +1,6 @@
 ﻿from __future__ import annotations
 
+import calendar
 import datetime as dt
 import html
 import json
@@ -86,6 +87,76 @@ def clean_text(value: str) -> str:
     return html.unescape(text).strip()
 
 
+def parse_partial_date(value: object, *, end_of_period: bool = False) -> dt.date | None:
+    if value is None:
+        return None
+
+    text = str(value).strip()
+    if not text:
+        return None
+
+    for pattern in ("%Y-%m-%d", "%Y-%m"):
+        try:
+            parsed = dt.datetime.strptime(text, pattern).date()
+        except ValueError:
+            continue
+
+        if pattern == "%Y-%m" and end_of_period:
+            last_day = calendar.monthrange(parsed.year, parsed.month)[1]
+            return dt.date(parsed.year, parsed.month, last_day)
+        return parsed
+
+    if re.fullmatch(r"\d{4}", text):
+        year = int(text)
+        return dt.date(year, 12, 31) if end_of_period else dt.date(year, 1, 1)
+
+    return None
+
+
+def extract_preprint_date(metadata: dict) -> dt.date | None:
+    for key in ("preprint_date", "earliest_date"):
+        parsed = parse_partial_date(metadata.get(key), end_of_period=True)
+        if parsed:
+            return parsed
+
+    arxiv = metadata.get("arxiv_eprints", [])
+    if not arxiv:
+        return None
+
+    arxiv_id = str(arxiv[0].get("value", ""))
+    match = re.fullmatch(r"(\d{2})(\d{2})\.\d+(?:v\d+)?", arxiv_id)
+    if not match:
+        return None
+
+    year = 2000 + int(match.group(1))
+    month = int(match.group(2))
+    last_day = calendar.monthrange(year, month)[1]
+    return dt.date(year, month, last_day)
+
+
+def extract_publication_date(metadata: dict) -> dt.date | None:
+    candidates: list[dt.date] = []
+
+    for imprint in metadata.get("imprints", []):
+        parsed = parse_partial_date(imprint.get("date"), end_of_period=True)
+        if parsed:
+            candidates.append(parsed)
+
+    for info in metadata.get("publication_info", []):
+        for key in ("publication_date", "pubdate", "year"):
+            parsed = parse_partial_date(info.get(key), end_of_period=True)
+            if parsed:
+                candidates.append(parsed)
+
+        freetext = info.get("pubinfo_freetext")
+        if freetext:
+            match = re.search(r"\((\d{4})\)\s*$", str(freetext))
+            if match:
+                candidates.append(dt.date(int(match.group(1)), 12, 31))
+
+    return max(candidates) if candidates else None
+
+
 def is_current_author(author: dict, bai: str) -> bool:
     if str(author.get("recid", "")) == AUTHOR_RECID:
         return True
@@ -112,18 +183,18 @@ def format_authors(authors: list[dict], bai: str) -> str:
     return ", ".join(rendered)
 
 
-def extract_year(metadata: dict) -> str:
-    for key in ("preprint_date", "earliest_date"):
-        value = metadata.get(key)
-        if value:
-            return str(value)[:4]
+def extract_display_date(metadata: dict, peer_reviewed: bool) -> dt.date | None:
+    publication_date = extract_publication_date(metadata)
+    preprint_date = extract_preprint_date(metadata)
 
-    for info in metadata.get("publication_info", []):
-        year = info.get("year")
-        if year:
-            return str(year)
+    if peer_reviewed:
+        return publication_date or preprint_date
+    return preprint_date or publication_date
 
-    return "N/A"
+
+def extract_year(metadata: dict, peer_reviewed: bool) -> str:
+    display_date = extract_display_date(metadata, peer_reviewed)
+    return str(display_date.year) if display_date else "N/A"
 
 
 def extract_venue(metadata: dict) -> tuple[str, bool]:
@@ -193,16 +264,22 @@ def normalize_record(hit: dict, bai: str) -> dict:
     if title == "Untitled" and title_entries:
         title = clean_text(title_entries[0].get("title", "Untitled"))
     venue, peer_reviewed = extract_venue(metadata)
+    sort_date = extract_display_date(metadata, peer_reviewed)
     return {
         "recid": str(metadata.get("control_number") or hit.get("id")),
         "title": title,
-        "year": extract_year(metadata),
+        "year": extract_year(metadata, peer_reviewed),
         "authors_html": format_authors(metadata.get("authors", []), bai),
         "venue": venue,
         "citation_count": metadata.get("citation_count", 0),
         "peer_reviewed": peer_reviewed,
+        "sort_date": sort_date.isoformat() if sort_date else None,
         "links": extract_links(metadata, str(metadata.get("control_number") or hit.get("id"))),
     }
+
+
+def sort_publications(publications: list[dict]) -> list[dict]:
+    return sorted(publications, key=lambda publication: publication.get("sort_date") or "", reverse=True)
 
 
 def render_publication_card(publication: dict) -> str:
@@ -254,7 +331,7 @@ def render_publications_page(author: dict, publications: list[dict]) -> str:
 def main() -> int:
     author = fetch_author_record()
     records = fetch_literature_records(author["bai"])
-    publications = [normalize_record(record, author["bai"]) for record in records]
+    publications = sort_publications([normalize_record(record, author["bai"]) for record in records])
 
     payload = {
         "synced_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),

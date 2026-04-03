@@ -93,9 +93,10 @@ function renderPublicationLinks(publication) {
 }
 
 function publicationSortKey(publication, index) {
+  const parsedSortDate = Date.parse(publication.sort_date ?? "");
   return {
+    sortDate: Number.isNaN(parsedSortDate) ? 0 : parsedSortDate,
     effectiveYear: Number.parseInt(formatPublicationYear(publication), 10) || 0,
-    published: publication.peer_reviewed ? 1 : 0,
     originalIndex: index,
   };
 }
@@ -129,11 +130,11 @@ async function syncSelectedPublications() {
         _sort: publicationSortKey(publication, index),
       }))
       .sort((left, right) => {
+        if (left._sort.sortDate !== right._sort.sortDate) {
+          return right._sort.sortDate - left._sort.sortDate;
+        }
         if (left._sort.effectiveYear !== right._sort.effectiveYear) {
           return right._sort.effectiveYear - left._sort.effectiveYear;
-        }
-        if (left._sort.published !== right._sort.published) {
-          return right._sort.published - left._sort.published;
         }
         return left._sort.originalIndex - right._sort.originalIndex;
       })
