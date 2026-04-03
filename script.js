@@ -102,7 +102,10 @@ function publicationSortKey(publication, index) {
 
 async function syncSelectedPublications() {
   const cards = document.querySelectorAll("[data-selected-publication]");
-  if (!cards.length) {
+  const publicationCountNode = document.querySelector("[data-publication-count]");
+  const peerReviewedCountNode = document.querySelector("[data-peer-reviewed-count]");
+
+  if (!cards.length && !publicationCountNode && !peerReviewedCountNode) {
     return;
   }
 
@@ -113,6 +116,13 @@ async function syncSelectedPublications() {
     }
 
     const payload = await response.json();
+    if (publicationCountNode) {
+      publicationCountNode.textContent = String(payload.publication_count ?? "");
+    }
+    if (peerReviewedCountNode) {
+      peerReviewedCountNode.textContent = String(payload.peer_reviewed_count ?? "");
+    }
+
     const publications = [...(payload.publications || [])]
       .map((publication, index) => ({
         ...publication,
