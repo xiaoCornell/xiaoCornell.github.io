@@ -1,0 +1,2115 @@
+﻿[
+  {
+    "id": "2604.06309",
+    "category": "cond-mat",
+    "title": "DYNAMITE: A high-performance framework for solving Dynamical Mean-Field Equations",
+    "abstract": "Understanding the dynamics of systems evolving in complex and rugged energy landscapes is central across physics, economics, biology, and computer science. Disordered mean-field models provide a powerful framework, as exact Dynamical Mean-Field Equations (DMFE) can be derived. However, solving the DMFE -- a set of coupled integral-differential equations for two-time functions -- remains a major numerical challenge. So far, large-time solutions of DMFE rely either on analytical approaches, such as the Cugliandolo--Kurchan ansatz based on assumptions like weak ergodicity breaking (which is known to fail in some cases), or on numerical integrations that reliably reach times $O(10^3)$ and extend further only via poorly controlled approximations. Consequently, no general method currently exists to solve DMFE at very long times, limiting the study of slow dynamics in complex landscapes. We present \\textsc{Dynamite} (DYNAmical Mean-fIeld Time Evolution solver), a high-performance framework for solving DMFE up to unprecedented times $t=O(10^7)$. It combines non-uniform interpolation, adaptive time stepping, and numerical `renormalization' of memory, enabling accurate evaluation of history integrals. Its asymptotic runtime is linear, with sublinear memory scaling. Stability and precision are ensured via an adaptive Runge--Kutta scheme and periodic sparsification of the past. \\textsc{Dynamite} achieves orders-of-magnitude speedups over uniform-grid methods while maintaining accuracy and reproducibility on CPU and GPU architectures. Benchmarks on glassy mean-field models, including the mixed spherical $p$-spin system, demonstrate access to aging and relaxation regimes previously out of reach. The framework provides a reproducible and extensible foundation for studying long-memory dynamical systems.",
+    "url": "https://arxiv.org/abs/2604.06309",
+    "type": "理论+数值",
+    "summary": "了解在复杂和崎岖的能源景观中演变的系统动力学是物理学、经济学、生物学和计算机科学的核心。无序平均场模型提供了一个强大的框架，因为可以导出精确的动态平均场方程 (DMFE)。然而，求解 DMFE（一组二次函数的耦合积分微分方程）仍然是一个重大的数值挑战。到目前为止，DMFE 的大型解决方案要么依赖于分析方法，例如基于弱遍历性破坏（已知在某些情况下会失败）等假设的 Cugliandolo--Kurchan ansatz，要么依赖于可靠地达到 $O(10^3)​​$ 时间的数值积分，并且只能通过控制不良的近似来进一步扩展。因此，目前不存在解决很长时间内的 DMFE 的通用方法，限制了复杂景观中慢动力学的研究。我们提出了 \\textsc{Dynamite} （动态平均场时间演化求解器），这是一个高性能框架，用于求解高达前所未有的时间 $t=O(10^7)$ 的 DMFE。\n\n它结合了非均匀插值、自适应时间步进和内存的数值“重整化”，从而能够准确评估历史积分。它的渐近运行时间是线性的，具有亚线性内存扩展。通过自适应龙格-库塔方案和过去的周期性稀疏化来确保稳定性和精度。 \\textsc{Dynamite} 比统一网格方法实现了数量级的加速，同时保持了 CPU 和 GPU 架构的准确性和可重复性。玻璃平均场模型的基准，包括混合球形$p$自旋系统，展示了以前无法实现的老化和松弛机制。该框架为研究长记忆动力系统提供了可重复和可扩展的基础。",
+    "authors": [
+      {
+        "name": "Johannes Lang"
+      },
+      {
+        "name": "Vincenzo Citro"
+      },
+      {
+        "name": "Luca Leuzzi"
+      },
+      {
+        "name": "Federico Ricci-Tersenghi"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Johannes Lang"
+      },
+      {
+        "name": "Vincenzo Citro"
+      },
+      {
+        "name": "Luca Leuzzi"
+      },
+      {
+        "name": "Federico Ricci-Tersenghi"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06316",
+    "category": "cond-mat",
+    "title": "Crystallization in the Fractional Quantum Hall Regime with Disorder-Aware Neural Quantum States",
+    "abstract": "We present the first microscopic demonstration of a disorder-pinned hole Wigner crystal (WC), providing a natural explanation for the reentrant integer quantum Hall effect observed near $\\nu=2/3$, as well as its analogs in fractional Chern insulators. We further identify a novel crossover regime above filling $\\nu=2/3$ that connects this hole WC to an electron WC, characterized by a network-like electron density structure. To uncover these phenomena, we use neural-network variational Monte Carlo (NNVMC) with a disorder-aware self-attention neural quantum state that describes both fractional quantum Hall (FQH) liquids and Wigner crystals within a single unbiased variational framework. More broadly, our method establishes a unified phase diagram that exposes a fundamental asymmetry in crystallization across half-filling: near $\\nu=1/3$, increasing LL mixing and disorder both stabilize an electron WC, whereas near $\\nu=2/3$, the hole WC dominates at weak LL mixing and ultimately gives way to the electron WC at strong LL mixing.",
+    "url": "https://arxiv.org/abs/2604.06316",
+    "type": "理论+数值",
+    "summary": "我们首次展示了无序钉扎空穴维格纳晶体 (WC)，为在 $\\nu=2/3$ 附近观察到的重入整数量子霍尔效应及其在分数陈绝缘体中的类似物提供了自然的解释。我们进一步在填充 $\\nu=2/3$ 之上确定了一种新颖的交叉机制，该机制将空穴 WC 连接到电子 WC，其特征是网络状电子密度结构。为了揭示这些现象，我们使用神经网络变分蒙特卡罗 (NNVMC) 和无序感知自注意力神经量子态，在单个无偏变分框架内描述分数量子霍尔 (FQH) 液体和维格纳晶体。更广泛地说，我们的方法建立了一个统一的相图，揭示了半填充结晶中的基本不对称性：在$\\nu=1/3$附近，增加LL混合和无序都稳定电子WC，而在$\\nu=2/3$附近，空穴WC在弱LL混合时占主导地位，并最终在强LL混合时让位于电子WC。",
+    "authors": [
+      {
+        "name": "Jihang Zhu"
+      },
+      {
+        "name": "Yi Huang"
+      },
+      {
+        "name": "Xiaodong Hu"
+      },
+      {
+        "name": "Di Xiao"
+      },
+      {
+        "name": "Ting Cao"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Jihang Zhu"
+      },
+      {
+        "name": "Yi Huang"
+      },
+      {
+        "name": "Xiaodong Hu"
+      },
+      {
+        "name": "Di Xiao"
+      },
+      {
+        "name": "Ting Cao"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.06360",
+    "category": "cond-mat",
+    "title": "Influence of Manganese Content on Plastic Deformation Mechanisms in Polycrystalline α-Ti-Mn Alloys",
+    "abstract": "Titanium alloys are widely used in aerospace, biomedical, and energy applications owing to their high specific strength, corrosion resistance, and biocompatibility. Among them, $\\alpha$-titanium alloys with a hexagonal close-packed (hcp) crystal structure exhibit characteristic deformation mechanisms governed by crystallographic slip and defect evolution. In this study, the influence of manganese content on the plastic deformation mechanisms of polycrystalline $\\alpha$-Ti-2Mn and $\\alpha$-Ti-4Mn (at.%) alloys is investigated using molecular dynamics simulations. Atomistic models were subjected to uniaxial loading at room temperature at a strain rate of 10$^9$ s$^{-1}$. The mechanical response was evaluated through stress-strain behavior, structural evolution, dislocation nucleation and interaction, and analysis of the local deformation field. Plastic deformation in these $\\alpha$-Ti-Mn alloys is dominated by dislocation nucleation and their subsequent evolution within the hcp lattice. Increasing Mn content leads to higher stress levels and enhanced resistance to plastic deformation, accompanied by changes in dislocation activity and defect evolution.",
+    "url": "https://arxiv.org/abs/2604.06360",
+    "type": "理论+数值",
+    "summary": "钛合金由于具有高比强度、耐腐蚀性和生物相容性，广泛应用于航空航天、生物医学和能源领域。其中，具有六方密排（hcp）晶体结构的α-钛合金表现出受晶体滑移和缺陷演化控制的特征变形机制。在本研究中，利用分子动力学模拟研究了锰含量对多晶$\\alpha$-Ti-2Mn和$\\alpha$-Ti-4Mn (at.%)合金塑性变形机制的影响。原子模型在室温下以 10$^9$ s$^{-1}$ 的应变速率承受单轴载荷。通过应力应变行为、结构演化、位错成核和相互作用以及局部变形场分析来评估机械响应。这些α-Ti-Mn合金中的塑性变形主要由位错成核及其随后在hcp晶格内的演化决定。增加锰含量会导致更高的应力水平和增强的抗塑性变形能力，同时伴随着位错活动和缺陷演变的变化。",
+    "authors": [
+      {
+        "name": "G. Marković"
+      },
+      {
+        "name": "M. Fedorov"
+      },
+      {
+        "name": "M. Sokića"
+      },
+      {
+        "name": "K. Frydrych"
+      },
+      {
+        "name": "F. J. Dominguez-Gutierrez"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "G. Marković"
+      },
+      {
+        "name": "M. Fedorov"
+      },
+      {
+        "name": "M. Sokića"
+      },
+      {
+        "name": "K. Frydrych"
+      },
+      {
+        "name": "F. J. Dominguez-Gutierrez"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.06400",
+    "category": "cond-mat",
+    "title": "Disorder averaging in random lattice models with periodic boundary conditions: Application to models with uncorrelated and correlated disorder",
+    "abstract": "Periodic boundary conditions are not always used in the study of disordered systems, but it can be advantageous to apply them to mimick thermodynamically large systems. In this case, polarization and its cumulants can not be obtained directly, but through the tools of the modern theory of polarization. This theory casts the polarization in crystalline systems as a geometric phase, rather than an operator expectation value. We develop disorder averaging techniques within the context of this theory which can calculate the variance of the polarization, its higher order moments, and the excess kurtosis (or Binder cumulant). We also derive an indicator of delocalization based on the degeneracy as a function of boundary conditions. We apply the computational techniques to two model systems. To test localization, we use a one-dimensional disordered model which is fully Anderson localized. Our calculations verify this. We also apply our techniques to the one dimensional de Moura-Lyra model, developed to study power law correlated (controlled by a parameter, $\\alpha$) disorder. While this model is a pathological one, our method is validated. We also point out the significance of pairwise degeneracies found in the parameter range, $\\alpha>2$ and near the band center (or near half filling), where the model was conjectured to exhibit a mobility edge.",
+    "url": "https://arxiv.org/abs/2604.06400",
+    "type": "理论+数值",
+    "summary": "周期性边界条件并不总是用于无序系统的研究，但将它们应用于模拟热力学大型系统可能是有利的。在这种情况下，偏振及其累积量不能直接获得，而是通过现代偏振理论的工具获得。该理论将晶体系统中的极化视为几何相位，而不是操作员期望值。我们在该理论的背景下开发了无序平均技术，该技术可以计算偏振的方差、其高阶矩和过量峰度（或 Binder 累积量）。我们还根据作为边界条件函数的简并性得出了离域指标。我们将计算技术应用于两个模型系统。为了测试定位，我们使用完全安德森本地化的一维无序模型。我们的计算验证了这一点。我们还将我们的技术应用于一维 de Moura-Lyra 模型，该模型是为了研究幂律相关（由参数 $\\alpha$ 控制）无序而开发的。虽然这个模型是一种病态模型，但我们的方法是经过验证的。\n\n我们还指出了在参数范围 $\\alpha>2$ 和带中心附近（或接近半填充）中发现的成对简并的重要性，其中模型被推测表现出迁移率边缘。",
+    "authors": [
+      {
+        "name": "Balázs Hetényi"
+      },
+      {
+        "name": "Luís Miguel Martelo"
+      },
+      {
+        "name": "András Lászlóffy"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Balázs Hetényi"
+      },
+      {
+        "name": "Luís Miguel Martelo"
+      },
+      {
+        "name": "András Lászlóffy"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06428",
+    "category": "cond-mat",
+    "title": "Two-dimensional active polar semiflexible polymer under shear flow",
+    "abstract": "The nonequilibrium structural and dynamical properties of semiflexible active polar polymers subject to linear flow are studied by numerical simulations. Filaments are confined in two dimensions and immersed in a fluid described by the Brownian Multiparticle Collision Dynamics approach. The applied shear flow causes conformational changes of a polymer, aligns it along the flow direction, and induces a tumbling motion at large flow rates. In an intermediate, activity-dependent shear-rate regime, a characteristic scaling exponent for the mean-square end-to-end distance along the gradient direction is observed. This exponent appears to be determined by the semiflexibility of the polymer. The tumbling dynamics exhibits a characteristic time, with a stronger dependence on the Weissenberg number than that of flexible active or passive polymers. Activity strongly impacts the rheological properties of the semiflexible polymers, and even implies a negative viscosity for weak flows. At very large values of the shear rate, shear dominates over activity and passive-polymer behavior is assumed.",
+    "url": "https://arxiv.org/abs/2604.06428",
+    "type": "数值",
+    "summary": "通过数值模拟研究了线性流动下半柔性活性极性聚合物的非平衡结构和动力学性质。细丝被限制在二维空间中并浸没在布朗多粒子碰撞动力学方法描述的流体中。施加的剪切流会引起聚合物的构象变化，使其沿流动方向排列，并在大流速下引起翻滚运动。在中间的、依赖于活动的剪切速率状态下，观察到沿梯度方向的均方端到端距离的特征缩放指数。该指数似乎是由聚合物的半柔性决定的。翻滚动力学表现出特征时间，与柔性主动或被动聚合物相比，对韦森伯格数的依赖性更强。活性强烈影响半柔性聚合物的流变性能，甚至意味着弱流动的负粘度。在剪切速率非常大的情况下，剪切力超过活性，并且假定聚合物呈被动行为。",
+    "authors": [
+      {
+        "name": "A. Lamura"
+      },
+      {
+        "name": "R. G. Winkler"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "A. Lamura"
+      },
+      {
+        "name": "R. G. Winkler"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06441",
+    "category": "cond-mat",
+    "title": "Study of the Nonlinear Dependence of Anomalous Hall Conductivity on Magnetization in Weak Itinerant Ferromagnet ZrZn2",
+    "abstract": "As opposed to the ordinary Hall effect, the anomalous Hall effect (AHE) remained unexplained for decades, and, amazingly, some misconceptions have survived even now, in particular, the claim that AHE is linearly related to the net magnetization. Karplus and Luttinger provided a quantum-mechanical explanation of AHE by explicitly including the SOC and the Berry curvature of electronic bands. They did address the question of linearity, but only in the relatively uncommon limit of the exchange coupling smaller than SOC. Now the linear relation in traditional ferromagnets is understood as a domain population effect: both AHE and magnetization are independently proportional to the domain disbalance. In this connection, it is interesting to check to what extent this relation will hold in {\\em single-domain} itinerant ferromagnet, the closest case to that analyzed by Karplus and Luttinger? We answer this question by direct calculations, using the Karplus-Luttinger formula, of AHE in a prototypical itinerant ferromagnet, ZrZn$_2$. We show that in the zero-magnetization limit, $M\\rightarrow 0$, the linear relation hold, but at rather small moments of $\\sim 0.4\\ \\mu_B$/Zr breaks down completely and even flips the sign.",
+    "url": "https://arxiv.org/abs/2604.06441",
+    "type": "数值",
+    "summary": "与普通霍尔效应相反，反常霍尔效应 (AHE) 几十年来一直无法解释，令人惊讶的是，一些误解至今仍然存在，特别是 AHE 与净磁化强度线性相关的说法。 Karplus 和 Luttinger 通过明确包含 SOC 和电子能带的贝里曲率，提供了 AHE 的量子力学解释。他们确实解决了线性问题，但仅限于交换耦合小于 SOC 的相对罕见的限制。现在，传统铁磁体中的线性关系被理解为磁畴布居效应：AHE 和磁化强度与磁畴不平衡独立成正比。在这方面，有趣的是检查这种关系在{\\em单域}流动铁磁体中保持到什么程度，这是与卡普拉斯和鲁廷格分析的情况最接近的情况？我们通过使用 Karplus-Luttinger 公式直接计算原型流动铁磁体 ZrZn$_2$ 中的 AHE 来回答这个问题。\n\n我们表明，在零磁化极限 $M\\rightarrow 0$ 下，线性关系保持不变，但在 $\\sim 0.4\\ \\mu_B$/Zr 相当小的时刻完全崩溃，甚至翻转符号。",
+    "authors": [
+      {
+        "name": "Surasree Sadhukhan"
+      },
+      {
+        "name": "Stepan S. Tsirkin"
+      },
+      {
+        "name": "Yaroslav Zhumagulov"
+      },
+      {
+        "name": "Igor. I. Mazin"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Surasree Sadhukhan"
+      },
+      {
+        "name": "Stepan S. Tsirkin"
+      },
+      {
+        "name": "Yaroslav Zhumagulov"
+      },
+      {
+        "name": "Igor. I. Mazin"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06453",
+    "category": "cond-mat",
+    "title": "Topochemically-engineered coexistence of charge and spin orders in intercalated endotaxial heterostructures",
+    "abstract": "Correlated electron systems that host multiple electronic orders offer routes to multifunctional quantum materials, but strong competition between these orders often prevents their coexistence. Here we show that nanoscale, metastable intercalated heterostructures can stabilize a rare combination of long-range magnetism and a commensurate charge density wave (C-CDW) order in a single material. We synthesize a two-dimensional (2D) metastable crystal, T/H-Fe$_x$TaS2, which comprises an endotaxial polytype heterostructure of 1T-TaS$_2$ and H-TaS$_2$ with Fe intercalated in the van der Waals interfaces. In T/H-Fe$_x$TaS2, Fe intercalants provide localized spins that support ferromagnetism, while 1T layers host a robust commensurate charge density wave (C-CDW) that persists to room temperature. In these intercalated heterostructures, Fe content simultaneously tunes ordering of spin and charge degrees of freedom, positioning topochemically-prepared intercalated endotaxial heterostructures as a route to stabilize and control competing quantum phases in 2D materials.",
+    "url": "https://arxiv.org/abs/2604.06453",
+    "type": "理论",
+    "summary": "拥有多个电子级的相关电子系统为多功能量子材料提供了途径，但这些级之间的激烈竞争往往阻碍了它们的共存。在这里，我们证明纳米级亚稳态插层异质结构可以稳定单一材料中长程磁性和相应电荷密度波（C-CDW）顺序的罕见组合。我们合成了二维（2D）亚稳态晶体 T/H-Fe$_x$TaS2，它包含 1T-TaS$_2$ 和 H-TaS$_2$ 的内轴多型异质结构，并在范德华界面中插入 Fe。在 T/H-Fe$_x$TaS2 中，Fe 插层提供了支持铁磁性的局部自旋，而 1T 层则具有在室温下持续存在的强大的相应电荷密度波 (C-CDW)。在这些插层异质结构中，Fe含量同时调节自旋和电荷自由度的排序，将拓扑化学制备的插层内轴异质结构定位为稳定和控制二维材料中竞争量子相的途径。",
+    "authors": [
+      {
+        "name": "Samra Husremović"
+      },
+      {
+        "name": "Wanlin Zhang"
+      },
+      {
+        "name": "Medha Dandu"
+      },
+      {
+        "name": "Berit H. Goodge"
+      },
+      {
+        "name": "Isaac M. Craig"
+      },
+      {
+        "name": "Ellis Kennedy"
+      },
+      {
+        "name": "Matthew P. Erodici"
+      },
+      {
+        "name": "Karen C. Bustillo"
+      },
+      {
+        "name": "Chengyu Song"
+      },
+      {
+        "name": "Jim Ciston"
+      },
+      {
+        "name": "Sinéad Griffin"
+      },
+      {
+        "name": "Archana Raja"
+      },
+      {
+        "name": "D. Kwabena Bediako"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Samra Husremović"
+      },
+      {
+        "name": "Wanlin Zhang"
+      },
+      {
+        "name": "Medha Dandu"
+      },
+      {
+        "name": "Sinéad Griffin"
+      },
+      {
+        "name": "Archana Raja"
+      },
+      {
+        "name": "D. Kwabena Bediako"
+      }
+    ],
+    "author_count": 13
+  },
+  {
+    "id": "2604.06462",
+    "category": "cond-mat",
+    "title": "Extensive Spatio-Temporal Chaos in Non-reciprocal Flocking",
+    "abstract": "Non-reciprocal interactions in active matter gives rise to a multitude of fascinating phenomena among which are collective oscillatory states without intrinsic particle chirality and active turbulence. Here we show that in a paradigmatic model for non-reciprocal flocking, the two species Vicsek model, these two states coexist: chiral order for small flocks, and extensive spatiotemporal chaos for large flocks, both separated by a finite wavelength instability whose scale is set by the rotation radius of the chiral orbits. For system sizes larger than this length scale extensive spatiotemporal chaos unfolds, as manifested by an extensive number of Floquet exponents for the unstable chiral state, a positive Lyapunov exponent, a finite correlation and chaotic length and a broad energy spectrum. Our results suggest that complex, turbulent behavior is a generic possibility in any system where particles or fields interact asymmetrically and may have significant implications for understanding how non-reciprocal interactions could drive chaotic, fluid-like behavior in active matter.",
+    "url": "https://arxiv.org/abs/2604.06462",
+    "type": "理论",
+    "summary": "活性物质中的非互易相互作用产生了许多令人着迷的现象，其中包括没有内在粒子手性和活性湍流的集体振荡状态。在这里，我们表明，在非互易聚集的范式模型中，即两个物种 Vicsek 模型，这两种状态共存：小群体的手性有序和大群体的广泛时空混沌，两者都被有限波长不稳定性分开，其规模由手性轨道的旋转半径设定。对于大于该长度尺度的系统尺寸，会出现广泛的时空混沌，表现为不稳定手性态的大量 Floquet 指数、正 Lyapunov 指数、有限相关性和混沌长度以及宽能谱。我们的结果表明，在粒子或场不对称相互作用的任何系统中，复杂的湍流行为是一种普遍的可能性，并且可能对于理解非互易相互作用如何驱动活性物质中的混沌、类流体行为具有重要意义。",
+    "authors": [
+      {
+        "name": "Chul-Ung Woo"
+      },
+      {
+        "name": "Jae Dong Noh"
+      },
+      {
+        "name": "Heiko Rieger"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Chul-Ung Woo"
+      },
+      {
+        "name": "Jae Dong Noh"
+      },
+      {
+        "name": "Heiko Rieger"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06486",
+    "category": "cond-mat",
+    "title": "Dimensional crossover in surface growth on rectangular substrates",
+    "abstract": "In a recent work [Phys. Rev. E 109, L042102 (2024)], interesting dimensional crossovers [from two- to one-dimensional (2D to 1D) scaling] were found in the growth of Kardar-Parisi-Zhang (KPZ) interfaces on rectangular substrates, with lateral sizes $L_y > L_x$. Here, we extend this study to other universality classes for interface growth -- specifically, the Edwards-Wilkinson (EW), the Mullins-Herring (MH), and the Villain-Lai Das Sarma (VLDS) classes. From extensive simulations, we demonstrate that, in all systems with sufficiently large aspect ratio $\\mathcal{R}=L_y/L_x$, the roughness $W$ scales with time $t$ in the growth regime as $W \\sim t^{\\beta_{\\text{2D}}}$ for $t \\ll t_c$ and $W \\sim t^{\\beta_{\\text{1D}}}$ for $t \\gg t_c$, where $t_c \\sim L_x^{z_{2\\text{D}}}$ in most cases. For the VLDS class, this crossover is also observed in the height distribution (HD), which approaches its characteristic probability density function for the 2D case at short times ($t \\ll t_c$) and then crosses over to the asymptotic 1D HD. Dimensional crossovers are also found in the steady state regime, both in the roughness scaling as well as in the VLDS HD, which interpolate between the 2D and 1D ones as $\\mathcal{R}$ increases. The particular case $L_x = L_y^{\\delta}$, with $0 < \\delta < 1$, is also discussed in detail and reveals interesting features of the investigated systems. For instance, there exist a `special' exponent $\\delta^* = z_{1\\text{D}}/z_{2\\text{D}}$ such that the temporal crossover cannot be observed for $\\delta > \\delta^*$. Moreover, this leads the saturation roughness to display a nonuniversal scaling: $W_s \\sim L_y^{\\Lambda}$, with $\\Lambda = (1-\\delta) \\alpha_{1\\text{D}} + \\delta \\alpha_{2\\text{D}}$.",
+    "url": "https://arxiv.org/abs/2604.06486",
+    "type": "理论+数值",
+    "summary": "在最近的一项工作中[Phys。 Rev. E 109, L042102 (2024)]，在矩形基板上 Kardar-Parisi-Zhang (KPZ) 界面的生长中发现了有趣的维度交叉 [从二维到一维 (2D 到 1D) 缩放]，横向尺寸 $L_y > L_x$。在这里，我们将这项研究扩展到界面增长的其他普遍性类别，特别是 Edwards-Wilkinson (EW)、Mullins-Herring (MH) 和 Villain-Lai Das Sarma (VLDS) 类别。通过广泛的模拟，我们证明，在具有足够大纵横比 $\\mathcal{R}=L_y/L_x$ 的所有系统中，粗糙度 $W$ 在生长状态中随时间 $t$ 缩放，对于 $t \\ll t_c$ 为 $W \\sim t^{\\beta_{\\text{2D}}}$ ，对于 $t \\gg t_c$ 为 $W \\sim t^{\\beta_{\\text{1D}}}$ ，在大多数情况下，其中 $t_c \\sim L_x^{z_{2\\text{D}}}$ 。对于 VLDS 类，这种交叉也在高度分布 (HD) 中观察到，它在短时间内接近 2D 情况的特征概率密度函数 ($t \\ll t_c$)，然后交叉到渐近 1D HD。\n\n在稳态状态下，粗糙度缩放以及 VLDS HD 中也发现了维度交叉，随着 $\\mathcal{R}$ 的增加，它在 2D 和 1D 之间进行插值。还详细讨论了特殊情况 $L_x = L_y^{\\delta}$，其中 $0 < \\delta < 1$，并揭示了所研究系统的有趣特征。例如，存在一个“特殊”指数 $\\delta^* = z_{1\\text{D}}/z_{2\\text{D}}$，使得 $\\delta > \\delta^*$ 无法观察到时间交叉。此外，这导致饱和度粗糙度显示非通用缩放：$W_s \\sim L_y^{\\Lambda}$，其中$\\Lambda = (1-\\delta) \\alpha_{1\\text{D}} + \\delta \\alpha_{2\\text{D}}$。",
+    "authors": [
+      {
+        "name": "Ismael S. S. Carrasco"
+      },
+      {
+        "name": "Tiago J. Oliveira"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Ismael S. S. Carrasco"
+      },
+      {
+        "name": "Tiago J. Oliveira"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06498",
+    "category": "cond-mat",
+    "title": "Observation of roton emission from a quantized vortex",
+    "abstract": "Turbulence in inviscid quantum fluids offers unparalleled access to the universal principles of non-equilibrium dynamics, spanning a vast range of length scales from macroscopic flow down to the individual vortex core. In the zero-temperature limit, the microscopic mechanism by which the turbulent energy cascade terminates in the absence of viscosity remains a foundational challenge in quantum hydrodynamics. While prevailing theoretical descriptions prioritize phonon emission, they fail to account for the strong interatomic correlations that give rise to the roton minimum in superfluid $^4\\mathrm{He}$. Here, we report the direct observation of roton emission from a single quantized vortex using a high-quality-factor nanomechanical resonator at 10 mK. We identify a sharp onset of dissipation at a critical velocity, and measure the energy loss per cycle, which corresponds quantitatively to the roton gap energy. Our findings address the long-standing mystery of zero-temperature energy relaxation by establishing roton emission as the primary dissipation channel in strongly correlated quantum liquids.",
+    "url": "https://arxiv.org/abs/2604.06498",
+    "type": "理论",
+    "summary": "无粘量子流体中的湍流为非平衡动力学的普遍原理提供了无与伦比的途径，跨越了从宏观流动到单个涡核的广泛长度尺度。在零温度极限下，在没有粘度的情况下湍流能量级联终止的微观机制仍然是量子流体力学的基本挑战。虽然主流的理论描述优先考虑声子发射，但它们未能解释导致超流体 $^4\\mathrm{He}$ 中旋转极小值的强烈原子间相关性。在这里，我们报告了使用 10 mK 的高质量因数纳米机械谐振器对单个量子化涡旋的旋转子发射的直接观察。我们确定了临界速度下耗散的急剧开始，并测量了每个周期的能量损失，这在数量上对应于转子间隙能量。我们的研究结果通过将旋子发射确立为强相关量子液体中的主要耗散通道，解决了长期存在的零温度能量弛豫之谜。",
+    "authors": [
+      {
+        "name": "A. Lester"
+      },
+      {
+        "name": "N. Morrison"
+      },
+      {
+        "name": "F. Novotny"
+      },
+      {
+        "name": "D. Schmoranzer"
+      },
+      {
+        "name": "S.Ó Peatáin"
+      },
+      {
+        "name": "V. Zavjalov"
+      },
+      {
+        "name": "V. Tsepelin"
+      },
+      {
+        "name": "S. Kafanov"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "A. Lester"
+      },
+      {
+        "name": "N. Morrison"
+      },
+      {
+        "name": "F. Novotny"
+      },
+      {
+        "name": "V. Zavjalov"
+      },
+      {
+        "name": "V. Tsepelin"
+      },
+      {
+        "name": "S. Kafanov"
+      }
+    ],
+    "author_count": 8
+  },
+  {
+    "id": "2604.06539",
+    "category": "cond-mat",
+    "title": "The effects of dispersion damping and three-body interactions for accurate layered-material exfoliation energies",
+    "abstract": "Accurate predictions of exfoliation energies and lattice constants of layered materials hinge on a correct description of London dispersion physics. Modern a posteriori dispersion corrections in density-functional theory (DFT), such as the exchange-hole dipole moment (XDM) model, capture the proper asymptotic behaviour at long range while making use of damping functions to prevent unphysical divergence at short range. In the united-atom limit, the dispersion energy is damped to a finite, non-zero value by both the canonical Becke--Johnson (BJ) damping function and the new Z-damping function. XDM(BJ) has previously demonstrated exceptional accuracy for modelling layered materials, such as in the LM26 benchmark, which includes graphite, hexagonal boron nitride, lead(II) oxide, and transition-metal dichalcogenides. This work presents the first assessment of XDM(Z) on the same benchmark. We also show that inclusion of three-body interactions via the Axilrod--Teller--Muto (ATM) term further improves the computed exfoliation energies for both XDM(BJ) and XDM(Z), yielding the best performance achieved on LM26 using semi-local functionals to date.",
+    "url": "https://arxiv.org/abs/2604.06539",
+    "type": "理论+数值",
+    "summary": "层状材料剥离能量和晶格常数的准确预测取决于对伦敦色散物理学的正确描述。密度泛函理论 (DFT) 中的现代后验色散校正，例如交换空穴偶极矩 (XDM) 模型，可以捕获远距离的正确渐近行为，同时利用阻尼函数来防止短距离的非物理发散。在联合原子极限下，色散能通过规范 Becke-Johnson (BJ) 阻尼函数和新的 Z 阻尼函数阻尼到有限的非零值。 XDM(BJ) 此前已在建模层状材料方面表现出卓越的准确性，例如在 LM26 基准中，其中包括石墨、六方氮化硼、氧化铅 (II) 和过渡金属二硫属化物。这项工作提出了在同一基准上对 XDM(Z) 的首次评估。我们还表明，通过 Axilrod-Teller-Muto (ATM) 项包含三体相互作用进一步提高了 XDM(BJ) 和 XDM(Z) 的计算剥落能量，从而产生迄今为止使用半局部泛函在 LM26 上实现的最佳性能。",
+    "authors": [
+      {
+        "name": "Adrian F. Rumson"
+      },
+      {
+        "name": "Kyle R. Bryenton"
+      },
+      {
+        "name": "Erin R. Johnson"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Adrian F. Rumson"
+      },
+      {
+        "name": "Kyle R. Bryenton"
+      },
+      {
+        "name": "Erin R. Johnson"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06555",
+    "category": "cond-mat",
+    "title": "On the possibility of hybrid chalcogenide perovskite photovoltaics",
+    "abstract": "Chalcogenide perovskites are an emerging class of photovoltaic absorbers offering stable, lead-free structures and promising optoelectronic properties. To date, the literature on chalcogenide perovskites has focused primarily on fully inorganic systems such as \\ce{BaZrS3}. This contrasts with the halide perovskites, for which hybrid organic-inorganic systems exhibit record performance. In this work, we assess the viability of hybrid chalcogenide perovskite absorbers using first-principles calculations. We screen a wide range of monovalent and divalent organic cations within the A-site to evaluate their electronic, optical, and thermodynamic properties. Our analysis reveals that the majority of candidates are structurally unstable; however, we identify the hydrazinium cation (\\ce{N2H6^{2+}}) as a unique candidate that maintains a stable perovskite structure. Specifically, we identify \\ce{N2H6ZrSe3} as the most promising candidate, exhibiting a quasi-direct band gap of \\SI{1.31}{eV} and a theoretical maximum efficiency of \\SI{24.5}{\\percent} for a \\SI{200}{\\nm} thin film. This study represents the first comprehensive computational report on hybrid chalcogenide perovskites, opening new avenues for the development of Earth-abundant photovoltaic materials.",
+    "url": "https://arxiv.org/abs/2604.06555",
+    "type": "数值",
+    "summary": "硫属化物钙钛矿是一类新兴的光伏吸收剂，具有稳定、无铅的结构和有前景的光电特性。迄今为止，有关硫属化物钙钛矿的文献主要集中在全无机体系，例如\\ce{BaZrS3}。这与卤化物钙钛矿形成鲜明对比，卤化物钙钛矿的有机-无机杂化系统表现出创纪录的性能。在这项工作中，我们使用第一原理计算评估了混合硫属化物钙钛矿吸收剂的可行性。我们筛选 A 位内的各种单价和二价有机阳离子，以评估其电子、光学和热力学性质。我们的分析表明，大多数候选人在结构上都不稳定；然而，我们将肼阳离子（\\ce{N2H6^{2+}}）确定为保持稳定钙钛矿结构的独特候选者。具体来说，我们将 \\ce{N2H6ZrSe3} 确定为最有希望的候选者，其准直接带隙为 \\SI{1.31}{eV}，而 \\SI{200}{\\nm} 薄膜的理论最大效率为 \\SI{24.5}{\\percent}。\n\n这项研究代表了第一份关于杂化硫族化物钙钛矿的综合计算报告，为开发地球上丰富的光伏材料开辟了新途径。",
+    "authors": [
+      {
+        "name": "Ruiqi Wu"
+      },
+      {
+        "name": "JJ Acton"
+      },
+      {
+        "name": "Shirui Wang"
+      },
+      {
+        "name": "Alex Ganose"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Ruiqi Wu"
+      },
+      {
+        "name": "JJ Acton"
+      },
+      {
+        "name": "Shirui Wang"
+      },
+      {
+        "name": "Alex Ganose"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06588",
+    "category": "cond-mat",
+    "title": "Decomposing momentum scales in the Hubbard Model: From Hatsugai-Kohmoto to Aubry-André",
+    "abstract": "The all-to-all momentum coupling of the Hubbard interaction makes interacting lattice models generically unsolvable. In many settings, however, from Peierls instabilities to Moiré superlattice physics, the low-energy behavior is dominated by scattering at a few characteristic wavevectors. We exploit this by constructing a momentum-space clustering scheme that retains only a chosen subset of interaction channels. Our scheme can be considered a generalization of twist-averaged boundary conditions. In proving this, we also prove that our scheme can be considered as a generalization of Hatsugai-Kohmoto (HK) models, and all versions of the HK model previously considered in the literature arise as special cases. This shows that the surprising phenomenological success of HK models arises from their correspondence to the finite-site Hubbard model. In particular, the recently introduced \"Momentum-Mixing HK\" model corresponds to a specific choice of clustering limit, which is equal to the original finite-site Hubbard model with twist-averaged boundary conditions. Our scheme becomes particularly powerful when a spatially varying potential selects the dominant momentum channels. We demonstrate this on the one-dimensional analogue of interacting moiré systems: the Aubry-André-Hubbard model. We show that for sufficiently strong onsite potential, clusters as small as two sites can recover the ground state energy to below 1% error relative to DMRG benchmarks. This establishes that physically motivated momentum-space truncations can yield accurate low-energy descriptions at feasible computational cost, opening a path toward tractable interacting models of Moiré systems in two dimensions. Code for reproducing all numerical results is available at this https URL .",
+    "url": "https://arxiv.org/abs/2604.06588",
+    "type": "理论+数值",
+    "summary": "哈伯德相互作用的全部动量耦合使得相互作用的晶格模型通常无法求解。然而，在许多设置中，从 Peierls 不稳定性到莫尔超晶格物理，低能行为主要由一些特征波矢的散射决定。我们通过构建一个动量空间聚类方案来利用这一点，该方案仅保留选定的交互通道子集。我们的方案可以被认为是扭曲平均边界条件的推广。在证明这一点时，我们还证明我们的方案可以被视为 Hatsugai-Kohmoto (HK) 模型的推广，并且之前在文献中考虑的 HK 模型的所有版本都是作为特例出现的。这表明 HK 模型令人惊讶的现象学成功源于它们与有限站点哈伯德模型的对应。特别是，最近推出的“Momentum-Mishing HK”模型对应于聚类极限的特定选择，其等于具有扭曲平均边界条件的原始有限位哈伯德模型。当空间变化的势选择主要动量通道时，我们的方案变得特别强大。\n\n我们在相互作用莫尔系统的一维模拟上证明了这一点：Aubry-André-Hubbard 模型。我们表明，对于足够强的现场潜力，小至两个站点的簇可以将基态能量恢复到相对于 DMRG 基准的误差低于 1%。这证明物理驱动的动量空间截断可以以可行的计算成本产生准确的低能量描述，为二维莫尔系统的易处理交互模型开辟了道路。用于重现所有数值结果的代码可在此 https URL 中找到。",
+    "authors": [
+      {
+        "name": "Dmitry Manning-Coe"
+      },
+      {
+        "name": "Barry Bradlyn"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Dmitry Manning-Coe"
+      },
+      {
+        "name": "Barry Bradlyn"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06594",
+    "category": "cond-mat",
+    "title": "Breathing Modes as a Probe of Energy Fluctuations in a Unitary Fermi Gas",
+    "abstract": "Directly accessing energy fluctuations in interacting quantum many-body systems remains a long-standing challenge, especially far from equilibrium. Here we show that in scale-invariant quantum gases with SO$(2,1)$ dynamical symmetry, the amplitude of the breathing mode provides a direct and quantitative probe of energy fluctuations. We establish an exact and universal relation between the oscillation amplitude and the energy fluctuation, with a dimensionless ratio fixed solely by the Bargmann index $k$, which labels the irreducible representation of the underlying SU$(1,1)$ algebra and thereby determines the structure of the many-body spectrum and dynamics. As a consequence, this relation is fully dictated by symmetry and remains independent of microscopic details and excitation protocols. Furthermore, we show that the excitation of breathing-mode states follows a universal statistical distribution governed by a single parameter, independent of the specific driving protocol. Our findings demonstrate that energy fluctuations, typically encoded in the many-body spectrum, can be directly accessed through collective dynamics, offering a symmetry-based route to probe nonequilibrium energy statistics in strongly interacting quantum systems.",
+    "url": "https://arxiv.org/abs/2604.06594",
+    "type": "理论",
+    "summary": "直接获取相互作用的量子多体系统中的能量波动仍然是一个长期存在的挑战，尤其是远离平衡时。在这里，我们表明，在具有 SO$(2,1)$ 动力学对称性的尺度不变量子气体中，呼吸模式的振幅提供了能量波动的直接和定量探测。我们在振荡幅度和能量涨落之间建立了精确且普遍的关系，其无量纲比率仅由 Bargmann 指数 $k$ 固定，它标记了底层 SU$(1,1)$ 代数的不可约表示，从而确定了多体谱和动力学的结构。因此，这种关系完全由对称性决定，并且独立于微观细节和激发协议。此外，我们表明呼吸模式状态的激励遵循由单个参数控制的通用统计分布，与特定的驱动协议无关。\n\n我们的研究结果表明，通常编码在多体光谱中的能量涨落可以通过集体动力学直接获取，从而提供了一种基于对称性的途径来探测强相互作用量子系统中的非平衡能量统计。",
+    "authors": [
+      {
+        "name": "Shi-Guo Peng"
+      },
+      {
+        "name": "Jing Min"
+      },
+      {
+        "name": "Kaijun Jiang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Shi-Guo Peng"
+      },
+      {
+        "name": "Jing Min"
+      },
+      {
+        "name": "Kaijun Jiang"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06656",
+    "category": "cond-mat",
+    "title": "High-Mobility Indium Native Oxide Transistors via Liquid-Metal Printing in Air",
+    "abstract": "Oxide semiconductors have emerged as common channel materials in transistors and hold promise for next-generation electronics, yet achieving high mobility typically requires costly vacuum-based techniques. Here, ultrathin (5-nm) indium native oxide (InOx) prepared by ambient-air liquid-metal printing (LMP) at low temperature (250 °C), is applied as semiconducting channel in field-effect transistor (FET). The resulting InOx is found to be polycrystalline with large lateral grains that extend vertically throughout the film thickness. InOx FETs in a transfer length method (TLM) configuration demonstrate a high conductivity mobility (uCON) of 125 cm2 V-1 s-1, with systematic analysis of contact resistance confirming potential for channel length scaling. Integration with atomic-layer-deposited (ALD) gate dielectrics further reveals excellent compatibility, for instance, InOx FET integrated with HfO2 exhibits a high field-effect mobility (uFE) of 107 cm2 V-1 s-1, an on/off current ratio (ION/IOFF) of >107, a subthreshold swing (SS) of 204 mV dec-1, a gate leakage of <10-6 A cm-2, while maintaining stable performance over 104 endurance cycles without degradation. Post-fabrication oxygen-plasma treatment is applied to achieve enhancement-mode operation and a depletion-load inverter is demonstrated, exhibiting a voltage gain of 69.8 V/V. These results demonstrate the great potential of LMP InOx as semiconducting channel in high-performance and power-efficient transistors for next-generation oxide electronics.",
+    "url": "https://arxiv.org/abs/2604.06656",
+    "type": "理论",
+    "summary": "氧化物半导体已成为晶体管中的常见沟道材料，并为下一代电子产品带来了希望，但实现高迁移率通常需要昂贵的真空技术。在这里，通过环境空气液态金属印刷（LMP）在低温（250°C）下制备的超薄（5纳米）氧化铟（InOx）被用作场效应晶体管（FET）中的半导体沟道。结果发现，所得的 InOx 是多晶的，具有大的横向晶粒，这些晶粒垂直延伸到整个薄膜厚度。采用传输长度法 (TLM) 配置的 InOx FET 表现出 125 cm2 V-1 s-1 的高电导率迁移率 (uCON)，并通过接触电阻的系统分析确认了沟道长度缩放的潜力。与原子层沉积（ALD）栅极电介质的集成进一步展现了优异的兼容性，例如，与HfO2集成的InOx FET表现出107 cm2 V-1 s-1的高场效应迁移率（uFE）、>107的开/关电流比（ION/IOFF）、204 mV dec-1的亚阈值摆幅（SS）、<10-6 A cm-2的栅极泄漏，同时保持超过 104 个耐力周期性能稳定且不会降低。\n\n采用制造后氧等离子体处理来实现增强模式操作，并演示了耗尽负载逆变器，其电压增益为 69.8 V/V。这些结果证明了 LMP InOx 作为下一代氧化物电子器件的高性能和高能效晶体管的半导体通道的巨大潜力。",
+    "authors": [
+      {
+        "name": "Shi-Rui Zhang"
+      },
+      {
+        "name": "Sanjoy Kumar Nandi"
+      },
+      {
+        "name": "Felipe Kremer"
+      },
+      {
+        "name": "Shimul Kanti Nath"
+      },
+      {
+        "name": "Wenzhong Ji"
+      },
+      {
+        "name": "Thomas Ratcliff"
+      },
+      {
+        "name": "Li Li"
+      },
+      {
+        "name": "Nicholas J. Ekins-Daukes"
+      },
+      {
+        "name": "Teng Lu"
+      },
+      {
+        "name": "Yun Liu"
+      },
+      {
+        "name": "Robert Glen Elliman"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Shi-Rui Zhang"
+      },
+      {
+        "name": "Sanjoy Kumar Nandi"
+      },
+      {
+        "name": "Felipe Kremer"
+      },
+      {
+        "name": "Teng Lu"
+      },
+      {
+        "name": "Yun Liu"
+      },
+      {
+        "name": "Robert Glen Elliman"
+      }
+    ],
+    "author_count": 11
+  },
+  {
+    "id": "2604.06660",
+    "category": "cond-mat",
+    "title": "Cholesteric Fingers from a Magnetic Perspective: Topology, Energetics, and Interactions",
+    "abstract": "Chiral liquid crystals and chiral magnets host a wide variety of topological solitons described by closely related continuum theories, namely the Frank-Oseen and Dzyaloshinskii models. Exploiting this correspondence, we develop a unified description of cholesteric fingers in confined liquid crystals and their magnetic counterparts. Within a continuum framework including bulk and surface anisotropies, we analyze the topology, structure, interactions, and collective states of the two main finger types, CF-1 and CF-2. We show that cholesteric fingers are composite chiral solitons built from merons. CF-2 corresponds to a bimeron with unit topological charge, while CF-1 is a topologically trivial composite of two merons with identical vorticities. From a homotopic viewpoint these textures correspond to skyrmions and droplets. Strong homeotropic anchoring induces confinement effects that reshape the meron structure and redistribute topological charge across the film thickness. Isolated fingers in the homogeneous state interact repulsively and behave as particle-like objects. Periodic phases emerge when the energy of an isolated finger becomes negative, leading to nucleation-type transitions with a diverging lattice period. Degenerate finger types allow mixed periodic sequences, analogous to stacking polytypes. In a conical background, interactions become attractive due to overlap of distortion regions. Film thickness controls stability and structure: at small thickness solitons collapse, while at large thickness bimerons exhibit bistability between surface-stabilized and bulk-like states.",
+    "url": "https://arxiv.org/abs/2604.06660",
+    "type": "理论",
+    "summary": "手性液晶和手性磁体拥有由密切相关的连续介质理论（即 Frank-Oseen 和 Dzyaloshinskii 模型）描述的各种拓扑孤子。利用这种对应关系，我们对受限液晶中的胆甾指及其磁性对应物进行了统一描述。在包括体积和表面各向异性的连续体框架内，我们分析了两种主要指状类型 CF-1 和 CF-2 的拓扑、结构、相互作用和集体状态。我们证明胆甾指是由半子构建的复合手性孤子。 CF-2 对应于具有单位拓扑电荷的双分子，而 CF-1 是具有相同涡度的两个双分子的拓扑平凡复合物。从同伦的角度来看，这些纹理对应于斯格明子和水滴。强的垂直锚定会产生限制效应，从而重塑 meron 结构并在整个薄膜厚度上重新分布拓扑电荷。均质状态下的孤立手指会相互排斥，表现得像粒子状物体。\n\n当孤立指状物的能量变为负值时，就会出现周期性相，从而导致具有发散晶格周期的成核型转变。简并手指类型允许混合周期序列，类似于堆叠多型体。在圆锥形背景中，由于扭曲区域的重叠，相互作用变得有吸引力。薄膜厚度控制稳定性和结构：在小厚度时，孤子塌陷，而在大厚度时，双聚体表现出表面稳定状态和块状状态之间的双稳态。",
+    "authors": [
+      {
+        "name": "Takayuki Shigenaga"
+      },
+      {
+        "name": "Andrey O. Leonov"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Takayuki Shigenaga"
+      },
+      {
+        "name": "Andrey O. Leonov"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06733",
+    "category": "cond-mat",
+    "title": "Bond-Strength-Based Understanding of Oxygen Vacancy Migration Barriers in Rutile Oxides",
+    "abstract": "We carry out bond-strength based analysis for the migration barrier ($E_{\\rm B}$) of oxygen vacancies in rutile-type 3$d$ transition-metal dioxides by combining density-functional theory (DFT) and the bond-valence model. The covalent and ionic contributions to chemical bonding are explicitly decomposed and quantified by the sum of the integrated crystal orbital Hamilton population ($S_c$) and the Madelung energy ($S_i$), respectively. Both $S_c$ and $S_i$ exhibit strong correlations with the $E_{\\rm B}$ from DFT ($E_{\\rm B}^{\\rm DFT}$), and their average $\\bar{S}$ provides a reasonable estimate of $E_{\\rm B}^{\\rm DFT}$ across the oxide series. Inspired by the bond-valence model, two parameters are extracted by fitting to a large dataset of 3$d$ transition-metal dioxides. Our results show that using these parameters, $E_{\\rm B}$ of oxygen vacancies can be efficiently estimated.",
+    "url": "https://arxiv.org/abs/2604.06733",
+    "type": "理论+数值",
+    "summary": "我们结合密度泛函理论 (DFT) 和键价模型，对金红石型 3$d$ 过渡金属二氧化物中氧空位的迁移势垒 ($E_{\\rm B}$) 进行基于键强度的分析。共价和离子对化学键的贡献分别通过积分晶体轨道汉密尔顿布居 ($S_c$) 和马德隆能量 ($S_i$) 的总和进行明确分解和量化。 $S_c$ 和 $S_i$ 都与 DFT 的 $E_{\\rm B}$ ($E_{\\rm B}^{\\rm DFT}$) 表现出很强的相关性，并且它们的平均值 $\\bar{S}$ 提供了整个氧化物系列中 $E_{\\rm B}^{\\rm DFT}$ 的合理估计。受键价模型的启发，通过拟合 3$d$ 过渡金属二氧化物的大型数据集来提取两个参数。我们的结果表明，使用这些参数，可以有效地估计氧空位的$E_{\\rm B}$。",
+    "authors": [
+      {
+        "name": "Inseo Kim"
+      },
+      {
+        "name": "Minseok Choi"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Inseo Kim"
+      },
+      {
+        "name": "Minseok Choi"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06741",
+    "category": "cond-mat",
+    "title": "Projector, Neural, and Tensor-Network Representations of $\\mathbb{Z}_N$ Cluster and Dipolar-cluster SPT States",
+    "abstract": "The $\\mathbb{Z}_N$ cluster-state wavefunction, a paradigmatic example of symmetry-protected topological (SPT) order with $\\mathbb{Z}_N \\times \\mathbb{Z}_N$ symmetry, is expressed in various equivalent ways. We identify the projector-based scheme called the $P$-representation as the efficient way to express cluster and dipolar cluster state's wavefunctions. Employing the restricted Boltzmann machine scheme to re-write the interaction matrix in the $P$-representation in terms of neural weight matrices allows us to develop the neural quantum state (NQS) and the matrix product state (MPS) representations of the same state. The NQS and MPS representations differ only in the way the weight matrices are split and grouped together in a matrix product. For both $\\mathbb{Z}_N$ cluster and dipolar cluster states, we derive in closed form the weight function $W(s,h)$ that couples physical spins $s$ to hidden variables $h$, generalizing the previous construction for $Z_2$ cluster states to $\\mathbb{Z}_N$. For the dipolar cluster state protected by two charge and two dipole symmetries, the procedure we have developed leads to the tensor product state (TPS) representation of the wavefunction where each local tensor carries three virtual indices connecting a given site to two nearest neighbors and one further neighbor. We benchmark the resulting TPS construction against conventional MPS representation using density-matrix renormalization group simulations and argue that the TPS could offer a more efficient representation for some modulated SPT states. As a by-product of the investigation, we generalize the previous $Z_2$ matrix product operator construction of the Kramers-Wannier (KW) operator to $\\mathbb{Z}_N$ and interprets it as the dipolar generalization of the discrete Fourier transform on $\\mathbb{Z}_N$ variables. The new interpretation naturally explains why the KW map is non-invertible.",
+    "url": "https://arxiv.org/abs/2604.06741",
+    "type": "理论+数值",
+    "summary": "$\\mathbb{Z}_N$ 簇态波函数是具有 $\\mathbb{Z}_N \\times \\mathbb{Z}_N$ 对称性的对称保护拓扑 (SPT) 阶的典型示例，可以用各种等效方式表示。我们将基于投影仪的方案（称为 $P$ 表示）确定为表达簇和偶极簇状态波函数的有效方法。采用受限玻尔兹曼机方案以神经权重矩阵的形式重写 $P$ 表示中的相互作用矩阵，使我们能够开发同一状态的神经量子态 (NQS) 和矩阵乘积状态 (MPS) 表示。 NQS 和 MPS 表示形式的不同之处仅在于权重矩阵在矩阵乘积中的分割和分组方式。对于 $\\mathbb{Z}_N$ 簇和偶极簇状态，我们以封闭形式导出权重函数 $W(s,h)$，它将物理自旋 $s$ 耦合到隐藏变量 $h$，将 $Z_2$ 簇状态的先前构造推广到 $\\mathbb{Z}_N$。\n\n对于由两个电荷和两个偶极子对称性保护的偶极簇态，我们开发的程序导致波函数的张量积态（TPS）表示，其中每个局部张量携带三个虚拟索引，将给定位置连接到两个最近的邻居和一个更远的邻居。我们使用密度矩阵重整化组模拟将所得的 TPS 构造与传统的 MPS 表示进行基准测试，并认为 TPS 可以为某些调制的 SPT 状态提供更有效的表示。作为研究的副产品，我们将 Kramers-Wannier (KW) 算子的先前 $Z_2$ 矩阵乘积算子构造推广到 $\\mathbb{Z}_N$ 并将其解释为 $\\mathbb{Z}_N$ 变量上离散傅立叶变换的偶极推广。新的解释自然地解释了为什么KW图是不可逆的。",
+    "authors": [
+      {
+        "name": "Seungho Lee"
+      },
+      {
+        "name": "Daesik Kim"
+      },
+      {
+        "name": "Hyun-Yong Lee"
+      },
+      {
+        "name": "Jung Hoon Han"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Seungho Lee"
+      },
+      {
+        "name": "Daesik Kim"
+      },
+      {
+        "name": "Hyun-Yong Lee"
+      },
+      {
+        "name": "Jung Hoon Han"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06745",
+    "category": "cond-mat",
+    "title": "Nonlinear phononics in LaFeAsO: Optical control of the crystal structure toward possible enhancement of superconductivity",
+    "abstract": "Nonlinear phononics provides a route to control crystal structures through light-induced phonon excitation. In this study, we apply nonlinear phononics to an iron-based superconductor, LaFeAsO, with the aim of tuning its crystal structure toward the ideal one to enhance superconductivity. We simulate light-induced phonon dynamics on the anharmonic lattice potential determined by first-principles calculations. We find that the anion height $h$, a key structural parameter in iron-based superconductors, approaches its ideal value when an appropriate infrared-active phonon mode is selectively excited. This result suggests the possibility of controlling crystal structures and enhancing superconductivity in iron-based superconductors based on the concept of nonlinear phononics.",
+    "url": "https://arxiv.org/abs/2604.06745",
+    "type": "数值",
+    "summary": "非线性声子学提供了一种通过光诱导声子激发来控制晶体结构的途径。在这项研究中，我们将非线性声子学应用于铁基超导体 LaFeAsO，目的是将其晶体结构调整到理想的结构以增强超导性。我们在由第一原理计算确定的非谐晶格势上模拟光致声子动力学。我们发现，当选择性激发适当的红外活性声子模式时，铁基超导体的关键结构参数阴离子高度 $h$ 接近其理想值。这一结果表明基于非线性声子学概念控制铁基超导体的晶体结构和增强超导性的可能性。",
+    "authors": [
+      {
+        "name": "Shu Kamiyama"
+      },
+      {
+        "name": "Tatsuya Kaneko"
+      },
+      {
+        "name": "Kazuhiko Kuroki"
+      },
+      {
+        "name": "Masayuki Ochi"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Shu Kamiyama"
+      },
+      {
+        "name": "Tatsuya Kaneko"
+      },
+      {
+        "name": "Kazuhiko Kuroki"
+      },
+      {
+        "name": "Masayuki Ochi"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06867",
+    "category": "cond-mat",
+    "title": "Proximate quantum spin liquid state in the frustrated HoInCu$_4$ metal",
+    "abstract": "We conducted a comprehensive and comparative muon-spin relaxation and rotation ($\\mu$SR) investigation on two fcc-lattice metallic compounds, HoCdCu$_4$ ($T_\\mathrm{N}\\approx 8$ K) and HoInCu$_4$ ($T_\\mathrm{N}\\approx 0.76$ K), to elucidate the nature of their magnetic ground states and the role of frustration in stabilizing them. Our $\\mu$SR results reveal that, in contrast to HoCdCu$_4$, strong magnetic frustration exists in HoInCu$_4$. Notably, in HoInCu$_{4}$, only 30% of the Ho-moments participate in the static magnetic ordering below $T_\\mathrm{N}$, while the remaining 70% of the Ho-moments exhibit dynamic correlations and persistent spin dynamics down to 0.3 K, resembling a quantum spin-liquid (QSL) behavior. By contrast, in HoCdCu$_{4}$, all the Ho-moments contribute to the magnetic order below $T_\\mathrm{N}$. Furthermore, in HoInCu$_{4}$, the temperature dependence of the relaxation rate indicates the presence of quantum critical fluctuations in the paramagnetic state near $T_\\mathrm{N}$, suggesting the proximity to a quantum critical point (QCP). These observations suggest that the ground state of HoInCu$_{4}$ is a proximate quantum spin liquid (PQSL), a state that has not been reported before in frustrated metallic systems. Our $\\mu$SR findings are further corroborated by recent inelastic neutron results on HoInCu$_4$, which show similarities to other insulating PQSL candidates, thus reinforcing our conclusions.",
+    "url": "https://arxiv.org/abs/2604.06867",
+    "type": "理论",
+    "summary": "我们对两种面心立方晶格金属化合物 HoCdCu$_4$ ($T_\\mathrm{N}\\approx 8$ K) 和 HoInCu$_4$ ($T_\\mathrm{N}\\approx 0.76$ K) 进行了全面且比较的 μ 子自旋弛豫和旋转 ($\\mu$SR) 研究，以阐明其磁性基态的性质以及挫败在稳定它们中的作用。我们的 $\\mu$SR 结果表明，与 HoCdCu$_4$ 相比，HoInCu$_4$ 中存在强磁挫败。值得注意的是，在 HoInCu$_{4}$ 中，只有 30% 的 Ho 矩参与低于 $T_\\mathrm{N}$ 的静态磁序，而其余 70% 的 Ho 矩表现出动态相关性和低至 0.3 K 的持续自旋动力学，类似于量子自旋液体 (QSL) 行为。相比之下，在 HoCdCu$_{4}$ 中，所有 Ho 矩都有助于低于 $T_\\mathrm{N}$ 的磁序。此外，在 HoInCu$_{4}$ 中，弛豫率的温度依赖性表明 $T_\\mathrm{N}$ 附近的顺磁态存在量子临界涨落，表明接近量子临界点 (QCP)。\n\n这些观察结果表明 HoInCu$_{4}$ 的基态是近似量子自旋液体 (PQSL)，这种状态以前在受挫金属系统中尚未报道过。最近 HoInCu$_4$ 的非弹性中子结果进一步证实了我们的 $\\mu$SR 发现，该结果显示出与其他绝缘 PQSL 候选者的相似之处，从而强化了我们的结论。",
+    "authors": [
+      {
+        "name": "I. Ishant"
+      },
+      {
+        "name": "T. Shiroka"
+      },
+      {
+        "name": "O. Stockert"
+      },
+      {
+        "name": "V. Fritsch"
+      },
+      {
+        "name": "M. Majumder"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "I. Ishant"
+      },
+      {
+        "name": "T. Shiroka"
+      },
+      {
+        "name": "O. Stockert"
+      },
+      {
+        "name": "V. Fritsch"
+      },
+      {
+        "name": "M. Majumder"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.06890",
+    "category": "cond-mat",
+    "title": "Microscopic contributions to the deviation from Amontons friction law",
+    "abstract": "We investigate the nanoscale friction behaviour of MX2 monolayers (M = Mo, W; X = S, Se) on Au(111) and Ag(111) substrates with a silicon tip using classical molecular dynamics simulations with machine-learning-based force fields. This approach enables an accurate description of tip-surface interactions and friction mechanisms at the atomic scale. We observe a pronounced non-monotonic dependence of the friction force on the applied normal load, indicating a breakdown of Amontons's law at the nanoscale. Analysis of lateral force' signals and their spatial Fourier transforms reveals the coexistence of multiple sliding modes, including longitudinal sliding, lateral slip, and zig-zag motions. We show that the overall friction response is governed by the relative contributions of these motions. While the qualitative features of friction are largely substrate-independent, both the magnitude of friction and the balance between sliding modes depend sensitively on the substrate-monolayer combination. In particular, Au/MoSe2/Si exhibits significantly reduced friction due to suppression of lateral slip motion. Our results indicate that the method is broadly applicable for probing nanoscale friction in related heterostructures.",
+    "url": "https://arxiv.org/abs/2604.06890",
+    "type": "数值",
+    "summary": "我们使用经典分子动力学模拟和基于机器学习的力场，研究了具有硅尖端的 Au(111) 和 Ag(111) 基板上 MX2 单层（M = Mo、W；X = S、Se）的纳米级摩擦行为。这种方法能够在原子尺度上准确描述尖端-表面相互作用和摩擦机制。我们观察到摩擦力对所施加的法向载荷的明显非单调依赖性，表明阿蒙顿定律在纳米尺度上被打破。对横向力信号及其空间傅立叶变换的分析揭示了多种滑动模式的共存，包括纵向滑动、横向滑动和之字形运动。我们表明，总体摩擦响应受这些运动的相对贡献的控制。虽然摩擦的定性特征在很大程度上与基材无关，但摩擦的大小和滑动模式之间的平衡都敏感地取决于基材-单层组合。特别是，Au/MoSe2/Si 由于抑制横向滑动运动而表现出显着降低的摩擦。\n\n我们的结果表明该方法广泛适用于探测相关异质结构中的纳米级摩擦。",
+    "authors": [
+      {
+        "name": "Suresh Ravisankar"
+      },
+      {
+        "name": "Ravikant Kumar"
+      },
+      {
+        "name": "Antonio Cammarata"
+      },
+      {
+        "name": "Thilo Glatzel"
+      },
+      {
+        "name": "Tomas Polcar"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Suresh Ravisankar"
+      },
+      {
+        "name": "Ravikant Kumar"
+      },
+      {
+        "name": "Antonio Cammarata"
+      },
+      {
+        "name": "Thilo Glatzel"
+      },
+      {
+        "name": "Tomas Polcar"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.06927",
+    "category": "cond-mat",
+    "title": "Development of ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT program in CP2K",
+    "abstract": "We implemented ab initio Hubbard parameter calculation schemes in the k-point sampling real-time TDDFT (RT-TDDFT) program in CP2K. We propose a new linear-response-based calculation scheme for energy-dependent Hubbard parameters. Our scheme extends the minimum-tracking linear-response method proposed in [Moynihan et al., arXiv preprint arXiv:1704.08076 (2017); E. B. Linscott et al., Phys. Rev. B 98, 235157 (2018)] to realize the calculation of energy-dependent Hubbard parameters that reflect the exchange-correlation (xc) effects included in the xc-functional. We discuss the properties of the minimum-tracking linear-response method in comparison to another promising scheme, ACBN0 [Agapito et al., Phys. Rev. X, 5, 011006 (2015)]. We show that, while neither clearly outperforms the other in the accuracy of static property calculations, each has a distinct dynamical application depending on its theoretical formulation.",
+    "url": "https://arxiv.org/abs/2604.06927",
+    "type": "数值",
+    "summary": "我们在 CP2K 的 k 点采样实时 TDDFT (RT-TDDFT) 程序中实现了从头开始 Hubbard 参数计算方案。我们提出了一种新的基于线性响应的能量相关哈伯德参数计算方案。我们的方案扩展了 [Moynihan et al., arXiv preprint arXiv:1704.08076 (2017); 中提出的最小跟踪线性响应方法； E. B. Linscott 等人，物理学。 Rev. B 98, 235157 (2018)] 实现能量相关哈伯德参数的计算，这些参数反映了 xc 泛函中包含的交换相关 (xc) 效应。我们讨论了最小跟踪线性响应方法与另一个有前途的方案 ACBN0 的特性 [Agapito 等人，Phys.修订版 X, 5, 011006 (2015)]。我们表明，虽然两者在静态属性计算的准确性方面都没有明显优于对方，但根据其理论公式，两者都有独特的动态应用。",
+    "authors": [
+      {
+        "name": "Kota Hanasaki"
+      },
+      {
+        "name": "Sandra Luber"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Kota Hanasaki"
+      },
+      {
+        "name": "Sandra Luber"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06998",
+    "category": "cond-mat",
+    "title": "Identifying Topological Invariants of Non-Hermitian Systems via Domain-Adaptive Multimodal Model for Mathematics",
+    "abstract": "The emergence of the non-Hermitian skin effect, distinguished by the exponential localization of bulk states onto boundaries in open systems, has redefined the conventional band theory. It can be established through the generalized Brillouin zone framework, the amoeba formulation or generalized Fermi surface in the different dimensions. However, its algorithmic implementation is still challenging in the high-dimensional cases. The large language models (LLM), functioning as the new paradigm in machine learning, can help to tack scientific problems. Here, we propose a framework composed by domain-adaptive Multimodal model for mathematics to identify topological invariants. We feed the eigenvalues and eigenvectors of the Hamiltonian in momentum space into our model as two input modalities. The Qwen Math is integrated as the backbone of the multimodal model, significantly enhancing its mathematical understanding capability and computational precision. Our results provide a paradigm for future studies on topological invariants identification via LLMs.",
+    "url": "https://arxiv.org/abs/2604.06998",
+    "type": "理论+数值",
+    "summary": "非厄米趋肤效应的出现，以开放系统中体态指数局域化为特征，重新定义了传统的能带理论。它可以通过不同维度的广义布里渊区框架、阿米巴公式或广义费米面来建立。然而，其算法实现在高维情况下仍然具有挑战性。大语言模型（LLM）作为机器学习的新范式，可以帮助解决科学问题。在这里，我们提出了一个由领域自适应多模态数学模型组成的框架，用于识别拓扑不变量。我们将动量空间中哈密顿量的特征值和特征向量作为两种输入模态输入到我们的模型中。 Qwen Math 被集成为多模态模型的骨干，显着增强了其数学理解能力和计算精度。我们的结果为未来通过法学硕士进行拓扑不变量识别的研究提供了范例。",
+    "authors": [
+      {
+        "name": "Jiuchun Meng"
+      },
+      {
+        "name": "Lichao Sun"
+      },
+      {
+        "name": "Xiumei Wang"
+      },
+      {
+        "name": "Dandan Zhu"
+      },
+      {
+        "name": "Xingping Zhou"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Jiuchun Meng"
+      },
+      {
+        "name": "Lichao Sun"
+      },
+      {
+        "name": "Xiumei Wang"
+      },
+      {
+        "name": "Dandan Zhu"
+      },
+      {
+        "name": "Xingping Zhou"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.07050",
+    "category": "cond-mat",
+    "title": "Using test particle sum rules to improve approximations in classical DFT : White-Bear and White-Bear mark II versions of the Lutsko Functional",
+    "abstract": "In a recent paper [M. Gül et al., Phys. Rev. E, 110 (6), 064115] we showed that test particle sum rules, which address the excess chemical potential and isothermal compressibility, could be used to develop new and accurate classical density functionals for hard-sphere (HS) fluids. Here we extend our approach to the construction of HS functionals building upon the state of art White-Bear (WB) and White-Bear mark II functionals. Employing the same test-particle sum rules we determine the two free parameters in the Lutsko [James F. Lutsko, Phys. Rev. E, 102, 062137] formulation of fundamental measure theory (FMT) by minimizing the relative errors between different routes to the two thermodynamic quantities. The resulting optimized Lutsko WB functionals, especially Lutsko WB mark II, are generally more accurate and consistent than those obtained in earlier treatments.",
+    "url": "https://arxiv.org/abs/2604.07050",
+    "type": "理论+数值",
+    "summary": "在最近的一篇论文中 [M. Gül 等人，物理学。 Rev. E, 110 (6), 064115] 我们表明，解决过量化学势和等温压缩性的测试粒子和规则可用于开发新的、准确的硬球 (HS) 流体经典密度泛函。在这里，我们在最先进的 White-Bear (WB) 和 White-Bear mark II 泛函的基础上扩展了构建 HS 泛函的方法。采用相同的测试粒子和规则，我们确定了 Lutsko 中的两个自由参数 [James F. Lutsko, Phys. Rev. E, 102, 062137] 通过最小化两个热力学量的不同路径之间的相对误差来制定基本测度理论 (FMT)。由此产生的优化 Lutsko WB 泛函，尤其是 Lutsko WB mark II，通常比早期处理中获得的函数更准确、更一致。",
+    "authors": [
+      {
+        "name": "Melih Gül"
+      },
+      {
+        "name": "Roland Roth"
+      },
+      {
+        "name": "Robert Evans"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Melih Gül"
+      },
+      {
+        "name": "Roland Roth"
+      },
+      {
+        "name": "Robert Evans"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07077",
+    "category": "cond-mat",
+    "title": "Unveiling Mechanisms of SEI Formation and Sodium Loss in Sodium Batteries via Interface Reactor Sampling",
+    "abstract": "The solid electrolyte interphase SEI critically dictates the cyclability and Coulombic efficiency of sodium-metal batteries, yet its dynamic formation mechanisms and atomic-scale evolution during electrochemical cycling remain elusive due to the spatiotemporal limitations of existing techniques. Here, an \"Interface Reactor\" sampling strategy is proposed to construct a charge-aware neuroevolution potential (qNEP). This approach overcomes the instability bottlenecks of conventional machine learning potentials, enabling stable, first-principles-accurate molecular dynamics simulations of complex electrode-electrolyte interfaces on the hundred-nanosecond scale. Fundamentally distinct SEI formation mechanisms are revealed during the early stage: carbonate-based electrolytes form heterogeneous organic-inorganic matrices via \"mixed co-formation,\" whereas ether-based electrolytes generate dense, self-limiting inorganic barriers through \"surface-energy-controlled\" NaF crystallization. Metadynamics simulations further elucidate that these compositional disparities govern sodium-ion storage dynamics: NaF-rich SEIs facilitate efficient metallic deposition, while carbonate-dominated interphases induce irreversible sodium trapping and continuous electrolyte decomposition. These findings establish a comprehensive atomic-scale framework linking solvation structure, interfacial reaction networks, and electrochemical performance, providing mechanistic guidelines for rational SEI engineering in next-generation alkali-metal batteries. Crucially, a general and robust computational framework is established for simulating complex interfacial reactions in electrochemical systems.",
+    "url": "https://arxiv.org/abs/2604.07077",
+    "type": "理论+数值",
+    "summary": "固体电解质界面SEI关键决定了钠金属电池的循环性能和库仑效率，但由于现有技术的时空限制，其动态形成机制和电化学循环过程中的原子尺度演化仍然难以捉摸。在这里，提出了一种“接口反应器”采样策略来构建电荷感知神经进化势（qNEP）。这种方法克服了传统机器学习潜力的不稳定瓶颈，能够在百纳秒尺度上对复杂的电极-电解质界面进行稳定、第一原理精确的分子动力学模拟。在早期阶段揭示了根本不同的SEI形成机制：碳酸盐基电解质通过“混合共形成”形成异质有机-无机基质，而醚基电解质通过“表面能控制”NaF结晶产生致密的、自限性的无机屏障。\n\n元动力学模拟进一步阐明，这些成分差异控制着钠离子存储动力学：富含NaF的SEI促进有效的金属沉积，而以碳酸盐为主的界面诱导不可逆的钠捕获和连续的电解质分解。这些发现建立了一个连接溶剂化结构、界面反应网络和电化学性能的全面原子尺度框架，为下一代碱金属电池中合理的SEI工程提供了机械指南。至关重要的是，建立了一个通用且强大的计算框架来模拟电化学系统中复杂的界面反应。",
+    "authors": [
+      {
+        "name": "Zhoulin Liu"
+      },
+      {
+        "name": "Ziliang Wang"
+      },
+      {
+        "name": "Zherui Chen"
+      },
+      {
+        "name": "Jianchun Sha"
+      },
+      {
+        "name": "Fengzijun Pan"
+      },
+      {
+        "name": "Pingyang Zhang"
+      },
+      {
+        "name": "Yinghe Zhang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Zhoulin Liu"
+      },
+      {
+        "name": "Ziliang Wang"
+      },
+      {
+        "name": "Zherui Chen"
+      },
+      {
+        "name": "Fengzijun Pan"
+      },
+      {
+        "name": "Pingyang Zhang"
+      },
+      {
+        "name": "Yinghe Zhang"
+      }
+    ],
+    "author_count": 7
+  },
+  {
+    "id": "2604.07112",
+    "category": "cond-mat",
+    "title": "Alterelectricity: Electrical Analogue of Altermagnetism",
+    "abstract": "We propose alterelectricity, an electrical analogue of altermagnetism, in which two switchable states possess alternating band structures. Such alterelectric states arise when a switchable sublattice-selective structural change connects two configurations related by a non-inversion symmetry. Using an anisotropic Lieb-lattice model, we establish a general symmetry framework for identifying alterelectricity. We further identify two material realizations of alterelectricity: (i) interlayer sliding in bilayers, as exemplified by tetragonal Ag2N and hexagonal FeHfI6; and (ii) ferroelectrically switchable Ti-adsorbed SnP2S6. We also propose an alterelectric tunnel junction that exploits switchable anisotropic Fermi surfaces to achieve a sizable tunneling electroresistance of 120%. This work establishes the foundational concept of alterelectricity and expands the material landscape of ferroic electronics.",
+    "url": "https://arxiv.org/abs/2604.07112",
+    "type": "理论",
+    "summary": "我们提出了交变电学，这是交变磁学的电学模拟，其中两个可切换的状态具有交替的能带结构。当可切换的亚晶格选择性结构变化连接通过非反演对称性相关的两个配置时，就会出现这种交替电态。使用各向异性李布晶格模型，我们建立了一个用于识别交变电的通用对称框架。我们进一步确定了交流电的两种材料实现：（i）双层中的层间滑动，以四方Ag2N和六方FeHfI6为例； (ii) 铁电可切换的 Ti 吸附 SnP2S6。我们还提出了一种交流电隧道结，它利用可切换的各向异性费米表面来实现 120% 的相当大的隧道电阻。这项工作建立了交流电的基本概念，并扩展了铁电子材料的材料前景。",
+    "authors": [
+      {
+        "name": "Shibo Fang"
+      },
+      {
+        "name": "Jianhua Wang"
+      },
+      {
+        "name": "Zhenzhou Guo"
+      },
+      {
+        "name": "Jialin Gong"
+      },
+      {
+        "name": "Haiyu Meng"
+      },
+      {
+        "name": "Wenhong Wang"
+      },
+      {
+        "name": "Zhenxiang Cheng"
+      },
+      {
+        "name": "Xiaotian Wang"
+      },
+      {
+        "name": "Yee Sin Ang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Shibo Fang"
+      },
+      {
+        "name": "Jianhua Wang"
+      },
+      {
+        "name": "Zhenzhou Guo"
+      },
+      {
+        "name": "Zhenxiang Cheng"
+      },
+      {
+        "name": "Xiaotian Wang"
+      },
+      {
+        "name": "Yee Sin Ang"
+      }
+    ],
+    "author_count": 9
+  },
+  {
+    "id": "2604.07139",
+    "category": "cond-mat",
+    "title": "Revisiting quadratic band crossing: from interaction-driven instability to intrinsic topology",
+    "abstract": "The realization of robust quantum anomalous Hall (QAH) phases at elevated temperatures remains a central challenge in condensed matter physics. While quadratic band crossing points (QBCP) provide a promising route towards QAH states, existing proposals are largely confined to idealized models or hindered by interaction-driven competing orders. Here, we demonstrate that these limitations are not intrinsic to QBCP but arise from their specific implementation. We propose a general mechanism where band inversion between a symmetry-protected orbital doublet (e.g. $d_{xz},d_{yz}$) and an isolated orbital (e.g. $d_{z^2}$)-generically generates a QBCP with opposite curvature. This crossing is directly gapped at the single-particle level by intrinsic atomic spin-orbit coupling, while the underlying band inversion naturally shields the resulting topological gap against other interaction-driven instabilities. We further suggest monolayer compounds $MNX_2$ ($M$= Ni, Pd, Pt; $N$= Nb, Ta; $X$= S, Se, Te) as a realistic material class that intrinsically realizes this mechanism. These findings provide a concrete pathway toward robust QAH phases in correlated materials.",
+    "url": "https://arxiv.org/abs/2604.07139",
+    "type": "理论",
+    "summary": "在高温下实现鲁棒的量子反常霍尔（QAH）相仍然是凝聚态物理的一个核心挑战。虽然二次带交叉点（QBCP）提供了一条通往 QAH 状态的有希望的途径，但现有的建议很大程度上局限于理想化模型或受到交互驱动的竞争秩序的阻碍。在这里，我们证明这些限制不是 QBCP 固有的，而是由其具体实现引起的。我们提出了一种通用机制，其中对称保护轨道双峰（例如 $d_{xz},d_{yz}$）和孤立轨道（例如 $d_{z^2}$）之间的能带反转通常生成具有相反曲率的 QBCP。这种交叉通过内在的原子自旋轨道耦合在单粒子水平上直接产生间隙，而底层的能带反转自然地屏蔽了由此产生的拓扑间隙，以防止其他相互作用驱动的不稳定性。我们进一步建议单层化合物 $MNX_2$ ($M$= Ni, Pd, Pt; $N$= Nb, Ta; $X$= S, Se, Te) 作为本质上实现这种机制的现实材料类别。这些发现为相关材料中稳健的 QAH 阶段提供了具体途径。",
+    "authors": [
+      {
+        "name": "Yadong Jiang"
+      },
+      {
+        "name": "Linghao Huang"
+      },
+      {
+        "name": "Zhaochen Liu"
+      },
+      {
+        "name": "Huan Wang"
+      },
+      {
+        "name": "Jing Wang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Yadong Jiang"
+      },
+      {
+        "name": "Linghao Huang"
+      },
+      {
+        "name": "Zhaochen Liu"
+      },
+      {
+        "name": "Huan Wang"
+      },
+      {
+        "name": "Jing Wang"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.07185",
+    "category": "cond-mat",
+    "title": "Perpendicular electric field induced $s^\\pm$-wave to $d$-wave superconducting transition in thin film La$_3$Ni$_2$O$_7$",
+    "abstract": "Inspired by the possibility that superconducting properties may be altered by applying a perpendicular electric field in the Ruddlesden-Popper (RP) bilayer nickelate La$_3$Ni$_2$O$_7$, we investigated the imbalanced two-orbital bilayer Hubbard model using dynamical cluster quantum Monte Carlo calculations. Focusing on the pairing symmetries induced by the electric field and their evolution with field strength in the undoped, hole-doped, and electron-doped regimes, we found that the $s^\\pm$-wave pairing originating from the $d_{z^2}$ orbital is suppressed; while a pairing symmetry transition from $s^\\pm$-wave to $d$-wave pairing occurs, driven by the interlayer $d_{z^2}$ orbital mismatch and the transfer of electrons into the $d_{x^2-y^2}$ orbital under the applied electric field. Intriguingly, the $d$-wave pairing arising from the $d_{x^2-y^2}$ orbital exhibits dome-like behavior with the electric field. Our large-scale many-body calculations align with the previous expectation from weak-coupling methods and provide further insight into the superconducting mechanism in RP nickelates.",
+    "url": "https://arxiv.org/abs/2604.07185",
+    "type": "理论+数值",
+    "summary": "受到在 Ruddlesden-Popper (RP) 双层镍酸盐 La$_3$Ni$_2$O$_7$ 中施加垂直电场可以改变超导特性的可能性的启发，我们使用动态簇量子蒙特卡罗计算研究了不平衡双轨道双层哈伯德模型。着眼于电场引起的配对对称性及其在未掺杂、空穴掺杂和电子掺杂状态下随场强的演变，我们发现源自 $d_{z^2}$ 轨道的 $s^\\pm$ 波配对受到抑制；而从 $s^\\pm$-波到 $d$-波配对的配对对称跃迁发生，是由层间 $d_{z^2}$ 轨道失配和电子在施加电场下转移到 $d_{x^2-y^2}$ 轨道驱动的。有趣的是，从 $d_{x^2-y^2}$ 轨道产生的 $d$ 波配对在电场下表现出圆顶状行为。我们的大规模多体计算符合之前弱耦合方法的预期，并为 RP 镍酸盐中的超导机制提供了进一步的见解。",
+    "authors": [
+      {
+        "name": "Yongping Wei"
+      },
+      {
+        "name": "Xun Liu"
+      },
+      {
+        "name": "Fan Yang"
+      },
+      {
+        "name": "Mi Jiang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Yongping Wei"
+      },
+      {
+        "name": "Xun Liu"
+      },
+      {
+        "name": "Fan Yang"
+      },
+      {
+        "name": "Mi Jiang"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.07247",
+    "category": "cond-mat",
+    "title": "Critical scaling and supercritical coarsening in Active Model B+",
+    "abstract": "We study critical dynamics and phase-ordering kinetics in Active Model B (AMB) and its minimal extension, Active Model B$+$ (AMB$+$), using deterministic simulations in two dimensions. At criticality $r_c=0$, both models display identical mean-field scaling despite nonequilibrium currents, with order-parameter decay with time as $m(t)\\sim t^{-\\alpha}$, with $\\alpha=\\frac14$, and dynamical exponent being $z=4$. A generalized equal-area construction yields the binodal densities and phase diagram of AMB$+$. For supercritical quenches, domain size grows as $L(t)\\sim t^{1/3}(1+c/\\ln t)$, revealing logarithmic corrections to the classic $t^{1/3}$ growth-law; moreover it is consistent with the functional renormalization group predictions for marginal activity in $d=2$. While the logarithmic corrections are quite prominent in AMB, in AMB$+$ they are suppressed as the active current acts against the formation of macro-clusters; the growth is eventually arrested when a long-lived microphase-separated state appears.",
+    "url": "https://arxiv.org/abs/2604.07247",
+    "type": "理论+数值",
+    "summary": "我们使用二维确定性模拟，研究主动模型 B (AMB) 及其最小扩展主动模型 B$+$ (AMB$+$) 中的临界动力学和相序动力学。在临界点 $r_c=0$ 时，尽管存在非平衡电流，两个模型都显示相同的平均场标度，有序参数随时间衰减为 $m(t)\\sim t^{-\\alpha}$，$\\alpha=\\frac14$，动态指数为 $z=4$。广义等面积结构产生 AMB$+$ 的双节密度和相图。对于超临界淬火，域尺寸随着 $L(t)\\sim t^{1/3}(1+c/\\ln t)$ 增长，揭示了对经典 $t^{1/3}$ 增长定律的对数修正；此外，它与 $d=2$ 中边际活动的函数重整化群预测一致。虽然对数修正在 AMB 中相当突出，但在 AMB$+$ 中，它们受到抑制，因为有功电流阻碍了宏观簇的形成；当出现长寿命的微相分离状态时，生长最终会停止。",
+    "authors": [
+      {
+        "name": "Abir Bhowmick"
+      },
+      {
+        "name": "P. K. Mohanty"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Abir Bhowmick"
+      },
+      {
+        "name": "P. K. Mohanty"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.07313",
+    "category": "cond-mat",
+    "title": "$\\mathbb Z_{2q}$ parafermionic hinge states in a three-dimensional array of coupled nanowires",
+    "abstract": "We construct a model of a three-dimensional helical second-order topological superconductor formed by an array of weakly coupled Rashba nanowires. We identify the parameter regime in which there are energy gaps in both the bulk and surface energy spectra, while a pair of gapless helical $\\mathbb{Z}_{2q}$ parafermionic modes (with $q$ being an odd integer) remains gapless along a closed path of one-dimensional hinges. The precise trajectory of these hinge modes is dictated by the hierarchy of interwire couplings and the boundary termination of the sample. In the noninteracting limit $q= 1$, the system hosts gapless Majorana hinge modes.",
+    "url": "https://arxiv.org/abs/2604.07313",
+    "type": "理论",
+    "summary": "我们构建了由弱耦合 Rashba 纳米线阵列形成的三维螺旋二阶拓扑超导体的模型。我们确定了体能谱和表面能谱中都存在能隙的参数状态，而一对无间隙螺旋 $\\mathbb{Z}_{2q}$ 顺子模式（$q$ 是奇数）沿着一维铰链的闭合路径保持无间隙。这些铰链模式的精确轨迹由线间耦合的层次结构和样品的边界终端决定。在非相互作用限制 $q= 1$ 下，系统具有无间隙马约拉纳铰链模式。",
+    "authors": [
+      {
+        "name": "Sarthak Girdhar"
+      },
+      {
+        "name": "Viktoriia Pinchenkova"
+      },
+      {
+        "name": "Even Thingstad"
+      },
+      {
+        "name": "Jelena Klinovaja"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Sarthak Girdhar"
+      },
+      {
+        "name": "Viktoriia Pinchenkova"
+      },
+      {
+        "name": "Even Thingstad"
+      },
+      {
+        "name": "Jelena Klinovaja"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06301",
+    "category": "hep-th",
+    "title": "$c=1$ strings as a matrix integral",
+    "abstract": "We study the perturbative $S$-matrix of the $c=1$ string and show that it admits a description in terms of a double-scaled (0+0)-dimensional matrix integral based on the spectral curve $\\mathsf{x}(z) = 2\\sqrt{2}\\cos(z)$, $\\mathsf{y}(z)=\\sin(z)$. Combined with the famous duality to matrix quantum mechanics, this establishes a triality between three formulations of the theory: the worldsheet description, matrix quantum mechanics, and a matrix integral. Starting from the intersection number expressions for the complex Liouville string, we derive closed-form Feynman rule expressions for the $c=1$ amplitudes as intersection numbers on the moduli space of Riemann surfaces. The intersection theory naturally computes amplitudes corresponding to a discretized target space where momentum is conserved only modulo an integer. The physical $S$-matrix elements are recovered by restriction to the first `Brillouin zone' and analytic continuation to Lorentzian kinematics. We prove that these amplitudes satisfy perturbative spacetime unitarity directly from the intersection theory expressions, and show that they satisfy a Mirzakhani-type recursion relation. We show detailed agreement with the known matrix quantum mechanics results, providing strong evidence for the triality.",
+    "url": "https://arxiv.org/abs/2604.06301",
+    "type": "理论",
+    "summary": "我们研究了 $c=1$ 字符串的扰动 $S$ 矩阵，并表明它允许基于谱曲线 $\\mathsf{x}(z) = 2\\sqrt{2}\\cos(z)$、$\\mathsf{y}(z)=\\sin(z)$ 的双尺度 (0+0) 维矩阵积分进行描述。结合著名的矩阵量子力学对偶性，这在理论的三个表述之间建立了一个试验性：世界表描述、矩阵量子力学和矩阵积分。从复数刘维尔弦的交数表达式开始，我们推导 $c=1$ 振幅的闭合形式费曼规则表达式作为黎曼曲面模空间上的交数。相交理论自然地计算与离散目标空间相对应的振幅，其中动量仅以整数为模守恒。通过限制第一个“布里渊区”和洛伦兹运动学的解析延拓来恢复物理 $S$ 矩阵元素。我们直接从交集理论表达式证明这些振幅满足微扰时空幺正性，并证明它们满足 Mirzakhani 型递归关系。\n\n我们展示了与已知矩阵量子力学结果的详细一致性，为试验性提供了强有力的证据。",
+    "authors": [
+      {
+        "name": "Scott Collier"
+      },
+      {
+        "name": "Lorenz Eberhardt"
+      },
+      {
+        "name": "Victor A. Rodriguez"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Scott Collier"
+      },
+      {
+        "name": "Lorenz Eberhardt"
+      },
+      {
+        "name": "Victor A. Rodriguez"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06307",
+    "category": "hep-th",
+    "title": "Lattice chiral symmetry from bosons in 3+1d",
+    "abstract": "We present a solvable Hamiltonian that realizes an exact lattice chiral $U(1)_V \\times U(1)_A$ symmetry. Nielsen-Ninomiya-type no-go theorems are evaded by using lattice bosons rather than fermions. The continuum limit is a compact boson field theory with an axion-like coupling. The $U(1)_V$ symmetry shifts the scalar, while $U(1)_A$ acts on local operators associated with short axion strings and is transmuted into a higher-form symmetry in the continuum limit. We demonstrate the chiral anomaly by showing that the lattice theta angle is shifted by an axial rotation when $U(1)_V$ is gauged. Gauging either $U(1)_V$ or $U(1)_A$ leads to lattice non-invertible and 2-group symmetries, respectively, matching the continuum picture.",
+    "url": "https://arxiv.org/abs/2604.06307",
+    "type": "理论",
+    "summary": "我们提出了一个可解的哈密顿量，它实现了精确的晶格手性 $U(1)_V \\times U(1)_A$ 对称性。通过使用晶格玻色子而不是费米子来规避尼尔森-二宫型不可行定理。连续极限是具有类轴子耦合的紧致玻色子场论。 $U(1)_V$ 对称性会移动标量，而 $U(1)_A$ 作用于与短轴子串相关的局部运算符，并在连续统极限中转变为更高形式的对称性。我们通过显示测量 $U(1)_V$ 时晶格 theta 角因轴向旋转而移动来证明手性异常。测量 $U(1)_V$ 或 $U(1)_A$ 分别导致晶格不可逆和 2 群对称性，与连续图相匹配。",
+    "authors": [
+      {
+        "name": "Zhiyao Lu"
+      },
+      {
+        "name": "Sahand Seifnashri"
+      },
+      {
+        "name": "Shu-Heng Shao"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Zhiyao Lu"
+      },
+      {
+        "name": "Sahand Seifnashri"
+      },
+      {
+        "name": "Shu-Heng Shao"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06343",
+    "category": "hep-th",
+    "title": "Indices of M5 and M2 branes at finite $N$ from equivariant volumes, and a new duality",
+    "abstract": "We study supersymmetric indices of the 6d $(2,0)$ theory of $N$ M5-branes on toric Sasaki-Einstein five-manifolds. Embedding the background into a local toric Calabi-Yau four-fold and equivariantly integrating the anomaly polynomial yields a finite-$N$ Cardy-limit formula in terms of equivariant characteristic classes. Separately, using equivariant constant maps in topological string theory and higher-derivative supergravity, we derive a finite-$N$ proposal for the superconformal, twisted and spindle indices of $N$ M2-branes probing arbitrary toric Calabi-Yau four-folds. The M2-brane partition functions depend on the same combination of equivariant classes as the M5 result. Motivated by this match, we generalize the M2/M5 duality recently proposed in arXiv:2601.17114 to an infinite class of M2-brane theories by exchanging the worldvolume and transverse geometries of the two brane systems.",
+    "url": "https://arxiv.org/abs/2604.06343",
+    "type": "理论",
+    "summary": "我们研究了环面 Sasaki-Einstein 五流形上 $N$ M5 膜的 6d $(2,0)$ 理论的超对称指数。将背景嵌入到局部复曲面 Calabi-Yau 四重中并对异常多项式进行等变积分，得出等变特征类的有限 $N$ Cardy 极限公式。另外，利用拓扑弦理论和高导数超引力中的等变常数图，我们得出了一个有限-$N$提议，用于探测任意复曲面 Calabi-Yau 四重的 $N$ M2 膜的超共形、扭曲和纺锤指数。 M2 膜配分函数取决于与 M5 结果相同的等变类组合。受这场比赛的启发，我们通过交换两个膜系统的世界体积和横向几何形状，将最近在 arXiv:2601.17114 中提出的 M2/M5 对偶性推广到无限类 M2 膜理论。",
+    "authors": [
+      {
+        "name": "Kiril Hristov"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Kiril Hristov"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.06635",
+    "category": "hep-th",
+    "title": "Massive modes on magnetized blow-up manifold of $T^2/\\mathbb{Z}_N$",
+    "abstract": "We study massive modes on a magnetized blow-up manifold of $T^2/\\mathbb{Z}_N$. The blow-up manifold can be constructed by appropriately replacing orbifold singular points with a part of $S^2$. To ensure a smooth connection between the massive modes on magnetized $T^2/\\mathbb{Z}_N$ orbifold and those on magnetized $S^2$, it is required that not only the total magnetic flux as well as the total curvature but also the effective magnetic flux on the connected line remain invariant under the blow-up procedure. Furthermore, we find that the number of the localized modes at each orbifold singular point increases by one for each unit increment of the mass level.",
+    "url": "https://arxiv.org/abs/2604.06635",
+    "type": "理论",
+    "summary": "我们研究 $T^2/\\mathbb{Z}_N$ 磁化吹爆流形上的大量模式。爆炸流形可以通过用 $S^2$ 的一部分适当替换轨道奇异点来构造。为了确保磁化$T^2/\\mathbb{Z}_N$ orbifold 上的质量模式与磁化$S^2$上的质量模式之间的平滑连接，不仅要求总磁通量和总曲率，而且要求连接线上的有效磁通量在吹胀过程中保持不变。此外，我们发现质量水平每增加一个单位，每个轨道奇点处的局域模态数量就会增加一。",
+    "authors": [
+      {
+        "name": "Tatsuo Kobayashi"
+      },
+      {
+        "name": "Hajime Otsuka"
+      },
+      {
+        "name": "Hikaru Uchida"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Tatsuo Kobayashi"
+      },
+      {
+        "name": "Hajime Otsuka"
+      },
+      {
+        "name": "Hikaru Uchida"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07195",
+    "category": "hep-th",
+    "title": "Can Locality, Unitarity, and Hidden Zeros Completely Determine Tree-Level Amplitudes?",
+    "abstract": "In this note, we address the question of whether locality, unitarity, and newly discovered hidden zeros can completely determine tree-level amplitudes, from the perspective of soft limit. We reconstruct the single-soft theorems of tree YM amplitudes and the double-soft theorems of tree NLSM amplitudes from locality, unitarity, and hidden zeros. A series of studies have shown that the full YM and NLSM amplitudes can be constructed from these soft theorems; therefore, we conclude that locality, unitarity, and hidden zeros completely determine the tree-level YM and NLSM amplitudes.",
+    "url": "https://arxiv.org/abs/2604.07195",
+    "type": "理论",
+    "summary": "在这篇文章中，我们从软极限的角度解决了局部性、幺正性和新发现的隐藏零点是否可以完全确定树级振幅的问题。我们从局域性、幺正性和隐藏零点重构树 YM 振幅的单软定理和树 NLSM 振幅的双软定理。一系列研究表明，可以根据这些软定理构造完整的 YM 和 NLSM 振幅；因此，我们得出结论，局部性、幺正性和隐藏零点完全决定了树级 YM 和 NLSM 幅度。",
+    "authors": [
+      {
+        "name": "Kang Zhou"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Kang Zhou"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.07288",
+    "category": "hep-th",
+    "title": "Loop Blow-up Inflation: An Overview",
+    "abstract": "This proceedings contribution provides an overview of Loop Blow-up Inflation and updates its observational predictions and their comparison with the latest CMB and BAO data from combined analyses of SPT, Planck, ACT, and BICEP/Keck, as well as ACT DR6 constraints on extra dark radiation. It is based on work originally published in arXiv:2403.04831 , carried out in collaboration with L. Brunelli, M. Cicoli, A. Hebecker, and R. Kuespert, and presented at the 2025 Workshop on Quantum Gravity and Strings. We focus on string loop corrections to the Kähler potential, long regarded as a potential threat to blow-up inflation in the Large Volume Scenario. We argue that these corrections, previously assumed avoidable, are in fact generically present and qualitatively alter the original non-perturbative picture: they invalidate slow-roll near the minimum and instead generate a new slow-roll regime at larger field values, where the scalar potential transitions from an exponential to a power-law plateau. This leads to modified inflationary dynamics and distinct cosmological predictions, including an increased tensor-to-scalar ratio. We confront all three SM-location scenarios with the latest constraints on $n_s$, $r$, and $\\Delta N_{\\rm eff}$. The tighter bound on extra dark radiation requires an updated Giudice-Masiero coefficient in Scenario III, yielding revised predictions presented here for the first time. All scenarios remain consistent with recent observations, with the ACT+DESI combination yielding near-perfect agreement in $n_s$ for vanishing extra dark radiation at $0.03\\sigma$ deviation. We also comment on subleading loop corrections, which improve robustness by reducing the field value required for slow roll. These results highlight that string loop effects, rather than being merely detrimental, can play a constructive role in realising viable inflation in string compactifications.",
+    "url": "https://arxiv.org/abs/2604.07288",
+    "type": "理论",
+    "summary": "本论文集提供了循环膨胀膨胀的概述，并更新了其观测预测及其与来自 SPT、普朗克、ACT 和 BICEP/Keck 综合分析的最新 CMB 和 BAO 数据的比较，以及 ACT DR6 对超暗辐射的限制。它基于最初发表于 arXiv:2403.04831 的工作，与 L. Brunelli、M. Cicoli、A. Hebecker 和 R. Kuespert 合作进行，并在 2025 年量子引力和弦研讨会上发表。我们专注于对凯勒势的弦环修正，长期以来，凯勒势被视为大容量情景中通货膨胀的潜在威胁。我们认为，这些以前认为可以避免的修正实际上普遍存在，并且定性地改变了原始的非扰动图：它们使接近最小值的慢滚无效，而是在更大的场值处生成新的慢滚状态，其中标量势从指数过渡到幂律平台。这导致了膨胀动力学的改变和独特的宇宙学预测，包括张量与标量之比的增加。\n\n我们面对所有三个 SM 位置场景以及 $n_s$、$r$ 和 $\\Delta N_{\\rm eff}$ 的最新约束。对超暗辐射的更严格限制需要情景 III 中更新的 Giudice-Masiero 系数，从而产生此处首次提出的修订预测。所有情景都与最近的观察结果保持一致，ACT+DESI 组合在 $n_s$ 中产生近乎完美的一致性，以 $0.03\\sigma$ 偏差消失额外的暗辐射。我们还评论了副引导循环校正，它通过减少慢滚所需的场值来提高鲁棒性。这些结果强调，弦环效应不仅是有害的，而且可以在实现弦压缩中可行的膨胀方面发挥建设性作用。",
+    "authors": [
+      {
+        "name": "Sukŗti Bansal"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Sukŗti Bansal"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.07291",
+    "category": "hep-th",
+    "title": "Groenewold-Moyal twists, integrable spin-chains and AdS/CFT",
+    "abstract": "We take the first steps to address via integrability the spectral problem of AdS/CFT dual pairs deformed by Groenewold-Moyal twists. In particular, we start by considering a twisted spin-chain that couples, through a Groenewold-Moyal twist deformation, two $\\mathfrak{sl}(2)$-invariant spin-chains. We interpret this deformed spin-chain as a deformation of a subsector of the $AdS_3/CFT_2$ spin-chain, but the construction shares qualitative features also with the corresponding deformation of the $AdS_5/CFT_4$ spin-chain, for example. As in similar types of deformations, we show that there exists a certain basis in which the spin-chain Hamiltonian takes a Jordan-block form. At the same time, by working in the basis of eigenstates of the generators used to construct the Groenewold-Moyal twist, the Hamiltonian appears to be diagonalisable and with a deformed spectrum. Employing the method of the Baxter equation, we write down the energy of the ground state and of excited states in a perturbation of the deformation parameter. We then consider the string-theory side of the duality, where the twist is realised as a deformation of AdS of the type of Maldacena-Russo-Hashimoto-Itzhaki. We construct a deformation of the usual BMN classical solution, and in the large-$J$ limit we match the leading $\\mathcal O(J^{-3})$ term of the energy of the spin-chain groundstate with a conserved charge of the string classical solution. Differently from the undeformed setup as well as similar kinds of deformations, we find that the general expression of this charge of the string sigma-model is non-local, and that it does not correspond to a standard isometry. Nevertheless, it can be computed from the monodromy matrix and it is part of the tower of conserved charges provided by integrability.",
+    "url": "https://arxiv.org/abs/2604.07291",
+    "type": "理论",
+    "summary": "我们采取了第一步，通过可积性解决因 Groenewold-Moyal 扭曲而变形的 AdS/CFT 双对的谱问题。特别地，我们首先考虑一个扭曲的自旋链，它通过 Groenewold-Moyal 扭曲变形耦合两个 $\\mathfrak{sl}(2)$ 不变的自旋链。我们将此变形的自旋链解释为 $AdS_3/CFT_2$ 自旋链的子部分的变形，但该结构也与 $AdS_5/CFT_4$ 自旋链的相应变形共享定性特征。与类似类型的变形一样，我们表明存在一定的基础，其中自旋链哈密顿量采用乔丹块形式。同时，通过在用于构造 Groenewold-Moyal 扭曲的生成元本征态的基础上工作，哈密顿量似乎是可对角化的并且具有变形谱。采用巴克斯特方程的方法，我们写下了变形参数摄动时基态和激发态的能量。然后我们考虑对偶性的弦理论方面，其中扭曲被实现为 Maldacena-Russo-Hashimoto-Itzhaki 类型的 AdS 变形。\n\n我们构造了通常的 BMN 经典解的变形，并且在大 $J$ 极限中，我们将自旋链基态能量的领先 $\\mathcal O(J^{-3})$ 项与弦经典解的守恒电荷相匹配。与未变形设置以及类似类型的变形不同，我们发现弦 sigma 模型的这种电荷的一般表达式是非局部的，并且它不对应于标准等距。然而，它可以从单性矩阵计算出来，并且它是由可积性提供的守恒电荷塔的一部分。",
+    "authors": [
+      {
+        "name": "Riccardo Borsato"
+      },
+      {
+        "name": "Miguel García Fernández"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Riccardo Borsato"
+      },
+      {
+        "name": "Miguel García Fernández"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.07293",
+    "category": "hep-th",
+    "title": "Exotic theta terms in 2+1d fractonic field theory",
+    "abstract": "In this work, we study exotic theta terms in the 2+1d $\\phi$-theory, which provides a continuum description of the XY-plaquette model. The $\\phi$-theory can be viewed as a fractonic analogue of the 1+1d compact boson and exhibits momentum and winding subsystem symmetries. In this theory, discontinuous field configurations play a crucial role. Although such configurations spoil the naive topology of the field, they induce nontrivial backreactions that give rise to new topological terms. We study two types of theta terms, which we call the bulk theta term and the foliated theta term. The foliated theta term is constructed by coupling winding currents on neighboring leaves of a foliation. Remarkably, the corresponding theta angle can vary spatially without affecting the classical equations of motion. Both theta terms lead to generalized Witten effects, in which vortex operators carrying winding subsystem charge acquire momentum subsystem charge. In the case of the foliated theta angle, the Witten effect exhibits a more intricate structure: vortex operators acquire a quadrupolar momentum charge. We demonstrate these features using lattice realizations based on the modified Villain formulation.",
+    "url": "https://arxiv.org/abs/2604.07293",
+    "type": "理论",
+    "summary": "在这项工作中，我们研究了 2+1d $\\phi$ 理论中的奇异 theta 项，该理论提供了 XY-plaquette 模型的连续统描述。 $\\phi$ 理论可以被视为 1+1d 紧致玻色子的分形模拟，并表现出动量和缠绕子系统对称性。在这个理论中，不连续场配置起着至关重要的作用。尽管这种配置破坏了场的朴素拓扑，但它们引起了不平凡的反反应，从而产生了新的拓扑项。我们研究两种类型的 θ 项，我们称之为大块 θ 项和叶状 θ 项。叶状 theta 项是通过耦合叶状相邻叶子上的绕组电流来构造的。值得注意的是，相应的 theta 角可以在空间上变化，而不影响经典的运动方程。两个 θ 项都会导致广义维滕效应，其中携带缠绕子系统电荷的涡算子获得动量子系统电荷。在叶状 theta 角的情况下，威滕效应表现出更复杂的结构：涡旋算子获得四极动量电荷。\n\n我们使用基于修改后的 Villain 公式的晶格实现来演示这些功能。",
+    "authors": [
+      {
+        "name": "Yuki Furukawa"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Yuki Furukawa"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.07332",
+    "category": "hep-th",
+    "title": "Theoretical and Observational Bounds on Dynamical Chern-Simons Gravity as an Effective Field Theory",
+    "abstract": "Gravitational effective theories are essential for characterizing the space of deviations from General Relativity (GR). Testing these theories against fundamental principles, such as causality and unitarity, can yield constraints on the corresponding parameters. In this paper, we perform such an analysis on the very interesting dynamical Chern-Simons (dCS) gravity. This is a parity violating correction to GR wherein a new scalar field couples to the Pontryagin density $^*R\\,R$. It has generated significant interest, including possible new gravitational wave shapes for LIGO/Virgo and new phenomena from cosmic inflation. In this work, we begin by deriving the dispersion relation and wave packet speed on top of a gravitational wave background in dCS gravity. This alters the corresponding Shapiro time delay (which we compute to second order), potentially giving superluminality. Causality then demands a bound on the dCS coupling constant, which we find to be moderately sharper, but compatible with, standard estimates. We then examine a UV completion in the form of a set of $N$ fermions with a (pseudo) Yukawa coupling. By imposing perturbativity and a gravitational species bound, we find that the dCS coupling constant is constrained significantly more, depending on the choice of scale of the species bound. We also identify higher order operators generated from the UV completion. Overall, we find that any dCS corrections to gravitational dynamics should likely be very small on macroscopic systems of observational interest, such as in late-time merging black holes.",
+    "url": "https://arxiv.org/abs/2604.07332",
+    "type": "理论",
+    "summary": "引力有效理论对于表征广义相对论 (GR) 的偏差空间至关重要。根据因果关系和幺正性等基本原理测试这些理论可以产生对相应参数的约束。在本文中，我们对非常有趣的动力学 Chern-Simons (dCS) 引力进行了这样的分析。这是对 GR 的宇称违规校正，其中新的标量场耦合到庞特里亚金密度 $^*R\\,R$。它引起了人们的极大兴趣，包括 LIGO/Virgo 可能出现的新引力波形状以及宇宙膨胀的新现象。在这项工作中，我们首先推导 dCS 引力中引力波背景上的色散关系和波包速度。这改变了相应的夏皮罗时间延迟（我们将其计算为二阶），可能会产生超光度。然后，因果关系要求 dCS 耦合常数有一个界限，我们发现该界限稍微尖锐一些，但与标准估计兼容。然后，我们以一组 $N$ 费米子和（伪）汤川耦合的形式检查 UV 完成。\n\n通过施加微扰和引力物质束缚，我们发现 dCS 耦合常数受到更大的限制，具体取决于物质束缚尺度的选择。我们还识别了 UV 补全生成的高阶算子。总体而言，我们发现，在具有观测兴趣的宏观系统中，例如在晚期合并黑洞中，对引力动力学的任何 dCS 修正都可能非常小。",
+    "authors": [
+      {
+        "name": "Alexander Cassem"
+      },
+      {
+        "name": "Mark P. Hertzberg"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Alexander Cassem"
+      },
+      {
+        "name": "Mark P. Hertzberg"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.07334",
+    "category": "hep-th",
+    "title": "The BEF Symplectic Form: A Lagrangian Perspective",
+    "abstract": "In 2025, Bernardes, Erler and Firat proposed a novel, elegant expression for the symplectic form on phase space applicable to non-local theories. We show that this BEF symplectic structure can be derived directly from an $L_\\infty$-Lagrangian by following the covariant phase space approach. Moreover, we establish a precise relation between the BEF symplectic structure and the Barnich--Brandt symplectic form for general finite-derivative theories. In particular, we prove that for theories with second-order equations of motion, the BEF symplectic structure coincides with the Barnich--Brandt construction, thereby explaining the emergence of the canonical corner term in general relativity within the BEF approach. We further argue that the BEF symplectic structure naturally encodes information about generic corner terms and some information about boundary conditions. In addition, we develop a general expression for the Hamiltonian in theories in $L_\\infty$-form and present several explicit examples illustrating the construction.",
+    "url": "https://arxiv.org/abs/2604.07334",
+    "type": "理论",
+    "summary": "2025 年，Bernardes、Erler 和 Firat 提出了适用于非局部理论的相空间辛形式的一种新颖、优雅的表达方式。我们证明，这种 BEF 辛结构可以通过遵循协变相空间方法直接从 $L_\\infty$-拉格朗日导出。此外，我们还为一般有限导数理论建立了 BEF 辛结构和 Barnich-Brandt 辛形式之间的精确关系。特别是，我们证明了对于二阶运动方程的理论，BEF 辛结构与 Barnich-Brandt 结构一致，从而解释了 BEF 方法中广义相对论中正则角项的出现。我们进一步认为，BEF 辛结构自然地编码了有关通用角项的信息和一些有关边界条件的信息。此外，我们以 $L_\\infty$ 形式开发了理论中哈密顿量的一般表达式，并提出了几个说明其构造的明确示例。",
+    "authors": [
+      {
+        "name": "Mohd Ali"
+      },
+      {
+        "name": "Georg Stettinger"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Mohd Ali"
+      },
+      {
+        "name": "Georg Stettinger"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06488",
+    "category": "math-ph",
+    "title": "Noether-Type Theorems and the Generalized Herglotz Principle in $q$-Contact Geometry",
+    "abstract": "We develop a unified geometric framework for dissipative mechanical systems based on uniform $q$-contact manifolds, which provide an extended phase space equipped with multiple contact $1$-forms. Within this setting, we construct both Hamiltonian and Lagrangian formalisms and establish a generalized Noether-type theorem describing the relationship between symmetries and dissipated quantities. We further show that $q$-contact Lagrangian systems admit a genuine variational origin through a generalized Herglotz principle involving multiple action variables. The resulting $q$-contact Euler--Lagrange equations naturally depend on the scalar combination $\\sum_{i=1}^q \\partial L/\\partial z_i$, reflecting the intrinsic structure of uniform $q$-contact geometry. We prove that this variational formulation is fully equivalent to the geometric $q$-contact Hamiltonian dynamics generated by the energy function. Several explicit examples involving multi-parameter dependent dynamics illustrate the effectiveness of the theory and demonstrate its potential to provide geometric insight into complex dissipative systems, thereby extending the scope of classical Lagrangian mechanics beyond symplectic and single-contact structures.",
+    "url": "https://arxiv.org/abs/2604.06488",
+    "type": "理论",
+    "summary": "我们为基于均匀 $q$ 接触流形的耗散机械系统开发了一个统一的几何框架，该框架提供了配备多个接触 $1$ 形式的扩展相空间。在此背景下，我们构建了哈密顿形式主义和拉格朗日形式主义，并建立了描述对称性和耗散量之间关系的广义诺特型定理。我们进一步表明，$q$-接触拉格朗日系统通过涉及多个作用变量的广义赫格洛茨原理承认真正的变分起源。由此产生的$q$-接触欧拉-拉格朗日方程自然取决于标量组合$\\sum_{i=1}^q \\partial L/\\partial z_i$，反映了均匀$q$-接触几何的内在结构。我们证明这个变分公式完全等价于能量函数生成的几何$q$接触哈密顿动力学。\n\n涉及多参数相关动力学的几个明确的例子说明了该理论的有效性，并证明了其为复杂耗散系统提供几何洞察的潜力，从而将经典拉格朗日力学的范围扩展到辛和单接触结构之外。",
+    "authors": [
+      {
+        "name": "Melvin Leok"
+      },
+      {
+        "name": "Cristina Sardón"
+      },
+      {
+        "name": "Xuefeng Zhao"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Melvin Leok"
+      },
+      {
+        "name": "Cristina Sardón"
+      },
+      {
+        "name": "Xuefeng Zhao"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06577",
+    "category": "math-ph",
+    "title": "The clothoid helices obtained via the Lie-Darboux method",
+    "abstract": "The clothoid helices that have both curvature and torsion directly proportional to the arclength are obtained via the Lie-Darboux method and studied in some detail. Shifted counterparts are also introduced and presented in the same approach.",
+    "url": "https://arxiv.org/abs/2604.06577",
+    "type": "理论",
+    "summary": "通过 Lie-Darboux 方法获得了曲率和挠率均与弧长成正比的回旋曲线，并对其进行了详细研究。还以相同的方法引入和呈现转移的对应物。",
+    "authors": [
+      {
+        "name": "H.C. Rosu"
+      },
+      {
+        "name": "J. de la Cruz"
+      },
+      {
+        "name": "P. Lemus-Basilio"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "H.C. Rosu"
+      },
+      {
+        "name": "J. de la Cruz"
+      },
+      {
+        "name": "P. Lemus-Basilio"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06919",
+    "category": "math-ph",
+    "title": "Variational derivation of the homogeneous Boltzmann equation",
+    "abstract": "We introduce a variational formulation of the homogeneous Boltzmann equation, with hard-sphere cross section, which selects the unique energy conserving solution. We prove that this solution arises from the microscopic dynamics, namely Kac's walk, and we establish the propagation in time of entropic chaoticity, under the minimal assumption that the initial distribution is entropically chaotic.",
+    "url": "https://arxiv.org/abs/2604.06919",
+    "type": "理论",
+    "summary": "我们引入了具有硬球横截面的齐次玻尔兹曼方程的变分公式，它选择了唯一的能量守恒解。我们证明该解源自微观动力学，即 Kac 游走，并且在初始分布是熵混沌的最小假设下建立了熵混沌性随时间的传播。",
+    "authors": [
+      {
+        "name": "Giada Basile"
+      },
+      {
+        "name": "Dario Benedetto"
+      },
+      {
+        "name": "Carlo Orrieri"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Giada Basile"
+      },
+      {
+        "name": "Dario Benedetto"
+      },
+      {
+        "name": "Carlo Orrieri"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07130",
+    "category": "math-ph",
+    "title": "Existence of a Phase Transition in the One-Dimensional Ising Spin Glass Model with Long-Range Interactions on the Nishimori Line",
+    "abstract": "Dyson [Commun. Math. Phys. 12, 91 (1969)] rigorously proved the existence of a phase transition in the one-dimensional Ising model with long-range interactions of the form $r^{-\\alpha}$ for $1 < \\alpha < 2$. In the present study, we extend this result to the Ising spin glass model with Gaussian disorder on the Nishimori line. Following Dyson's method, we first prove the existence of long-range order at finite low temperatures in the Dyson hierarchical Ising spin glass model on the Nishimori line, with power-law-like interactions $J(r) \\sim r^{-\\alpha}$ for $1 < \\alpha < 3/2$. The key ingredients of the proof are the interpolation method developed in the rigorous analysis of mean-field spin glass models, the Gibbs--Bogoliubov inequality on the Nishimori line, and the Tsirelson--Ibragimov--Sudakov inequality (Gaussian concentration inequality). We then use the Griffiths inequality on the Nishimori line to rigorously establish the existence of a phase transition in the one-dimensional Ising spin glass model with long-range interactions on the Nishimori line for $1 < \\alpha < 3/2$. For $\\alpha \\ge 3/2$, the existence of a phase transition remains an open problem.",
+    "url": "https://arxiv.org/abs/2604.07130",
+    "type": "理论",
+    "summary": "戴森[通讯。数学。物理。 12, 91 (1969)]严格证明了一维 Ising 模型中存在相变，其形式为 $r^{-\\alpha}$ 的长程相互作用，其中 $1 < \\alpha < 2$。在本研究中，我们将此结果扩展到西森线上具有高斯无序的伊辛自旋玻璃模型。遵循戴森的方法，我们首先证明了西森线戴森分层伊辛自旋玻璃模型中有限低温下长程有序的存在，具有类似幂律的相互作用 $J(r) \\sim r^{-\\alpha}$ for $1 < \\alpha < 3/2$。证明的关键要素是在平均场自旋玻璃模型的严格分析中开发的插值方法、西森线上的吉布斯-博戈柳博夫不等式以及齐雷尔森-伊布拉吉莫夫-苏达科夫不等式（高斯浓度不等式）。然后，我们使用西森线上的格里菲斯不等式严格建立一维伊辛自旋玻璃模型中相变的存在性，并在西森线上具有长程相互作用，$1 < \\alpha < 3/2$。对于$\\alpha \\ge 3/2$，相变的存在仍然是一个悬而未决的问题。",
+    "authors": [
+      {
+        "name": "Manaka Okuyama"
+      },
+      {
+        "name": "Masayuki Ohzeki"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Manaka Okuyama"
+      },
+      {
+        "name": "Masayuki Ohzeki"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06270",
+    "category": "quant-ph",
+    "title": "Accelerating Quantum State Encoding with SIMD: Design, Implementation, and Benchmarking",
+    "abstract": "Efficient data encoding is the main factor affecting how fast hybrid quantum-classical algorithms run, but traditional simulators spend most of their time changing classical features into quantum rotations. This work introduces Hybriqu Encoder, a Rust-based, SIMD-aware kernel that focuses exclusively on angle encoding and integrates transparently with Python via CFFI. The kernel processes four double-precision rotations at once using AVX-class vector lanes, combines data in a way that fits well with the cache and uses pre-calculated trigonometric factors, while keeping all unsafe operations within a safe Rust interface. Benchmarks on Apple Silicon show that using pure angle encoding is 5.4% faster at 64 qubits, and the speedup increases as the amount of data exceeds the L1 cache size, while kernels that quickly apply rotations to the entire state vector are limited by memory and do not benefit from SIMD. These results indicate that using vectorization leads to consistent improvements when calculations are the main focus, but limits on data transfer speed prevent additional speed increases, highlighting the need for future efforts on better state updates and choosing between different processing methods. By combining smart optimization that considers the architecture with Rust's safety features, the Hybriqu Encoder offers a flexible base for bigger, mixed systems designed to reduce data encoding delays in future hybrid quantum-classical processes.",
+    "url": "https://arxiv.org/abs/2604.06270",
+    "type": "理论+数值",
+    "summary": "高效的数据编码是影响混合量子经典算法运行速度的主要因素，但传统模拟器花费大部分时间将经典特征转换为量子旋转。这项工作介绍了 Hybriqu Encoder，这是一个基于 Rust 的 SIMD 感知内核，专门专注于角度编码，并通过 CFFI 与 Python 透明集成。内核使用 AVX 级矢量通道同时处理四个双精度旋转，以适合缓存的方式组合数据并使用预先计算的三角因子，同时将所有不安全操作保留在安全的 Rust 接口内。 Apple Silicon 上的基准测试表明，使用纯角度编码在 64 个量子位上速度提高了 5.4%，并且随着数据量超过 L1 缓存大小，加速会增加，而快速将旋转应用于整个状态向量的内核受到内存限制，无法从 SIMD 中受益。\n\n这些结果表明，当计算是主要关注点时，使用矢量化可以带来持续的改进，但数据传输速度的限制阻止了额外的速度提高，突出表明未来需要努力改进状态更新并在不同的处理方法之间进行选择。通过将考虑架构的智能优化与 Rust 的安全功能相结合，Hybriqu 编码器为更大的混合系统提供了灵活的基础，旨在减少未来混合量子经典过程中的数据编码延迟。",
+    "authors": [
+      {
+        "name": "Riza Alaudin Syah"
+      },
+      {
+        "name": "Irwan Alnarus Kautsar"
+      },
+      {
+        "name": "Gunawan Witjaksono"
+      },
+      {
+        "name": "Haza Nuzly Bin Abdull Hamed"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Riza Alaudin Syah"
+      },
+      {
+        "name": "Irwan Alnarus Kautsar"
+      },
+      {
+        "name": "Gunawan Witjaksono"
+      },
+      {
+        "name": "Haza Nuzly Bin Abdull Hamed"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06322",
+    "category": "quant-ph",
+    "title": "Probing the Planck scale with quantum computation",
+    "abstract": "General relativity and quantum mechanics are incompatible at the Planck scale. This contention can be examined if a quantum computer is set to operate at a rate that exceeds the classical limit of one operation per Planck volume-time, or equivalently $2^{491}$ m$^{-3}$ s$^{-1}$. Here we quantify the relation between the logical qubit count and the extent to which classicality is challenged. We argue that 500 logical qubits are sufficient to reject theories confined to a laboratory. We account for the operational cost of computation and communication at all scales up to and including the observable universe, ultimately constrained by a 1600-logical-qubit computer. Remarkably, current plans for commercial quantum computers are projected to surpass this limit, thereby putting the quantum-gravity standoff to the test.",
+    "url": "https://arxiv.org/abs/2604.06322",
+    "type": "理论",
+    "summary": "广义相对论和量子力学在普朗克尺度上是不相容的。如果量子计算机的运行速度超过每普朗克体积时间一次操作的经典极限，或者等效于 $2^{491}$ m$^{-3}$ s$^{-1}$，则可以检验这一论点。在这里，我们量化了逻辑量子比特计数与经典性受到挑战的程度之间的关系。我们认为 500 个逻辑量子位足以否定仅限于实验室的理论。我们考虑了所有尺度（包括可观测宇宙）的计算和通信的运营成本，最终受到 1600 个逻辑量子位计算机的限制。值得注意的是，目前的商用量子计算机计划预计将超越这一限制，从而使量子引力对峙面临考验。",
+    "authors": [
+      {
+        "name": "Boaz Katz"
+      },
+      {
+        "name": "Shlomi Kotler"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Boaz Katz"
+      },
+      {
+        "name": "Shlomi Kotler"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06325",
+    "category": "quant-ph",
+    "title": "Probabilistic and approximate universal quantum purification machines",
+    "abstract": "We study the task of lifting arbitrary quantum states and channels to purifications and Stinespring dilations, respectively, in both the probabilistic exact and deterministic approximate settings. We formalize this task through a general framework of quantum purification machines that, given a finite number of copies or uses of a black-box input, aim to output a corresponding purification or Stinespring dilation. In the probabilistic exact setting, we show that universality is not necessary to rule out such transformations: the simple requirement that a machine purifies two inputs of different rank with non-zero probability already implies that it cannot be described by a linear positive map. This simple argument captures a fundamental obstruction of quantum theory and recovers the impossibility of universal probabilistic purification from finitely many copies. In the approximate setting, we allow for general machines that are not required, in general, to produce a pure output. Using the minimum average error as our figure of merit, we derive analytical expressions for the performance of several physically motivated strategies as well as a general upper bound on the achievable error, which is tight in a specific regime. Our analysis reveals a trade-off: strategies that produce a pure output - among which we prove the optimal to be a strategy that produces as a fixed output a maximally entangled purification of the fully depolarizing channel - perform optimally between those considered for large environment dimension, while append-environment strategies that generally produce non-pure outputs perform better at small environment dimension.",
+    "url": "https://arxiv.org/abs/2604.06325",
+    "type": "理论",
+    "summary": "我们研究了在概率精确和确定性近似设置下分别将任意量子态和通道提升到纯化和 Stinespring 膨胀的任务。我们通过量子净化机的通用框架来形式化这项任务，在给定有限数量的副本或使用黑盒输入的情况下，目标是输出相应的净化或 Stinespring 膨胀。在概率精确设置中，我们表明普遍性并不是排除此类转换所必需的：机器以非零概率净化不同秩的两个输入的简单要求已经意味着它不能用线性正映射来描述。这个简单的论证抓住了量子理论的一个基本障碍，并恢复了从有限多个副本中进行普遍概率纯化的不可能性。在近似设置中，我们允许一般不需要的通用机器产生纯输出。\n\n使用最小平均误差作为我们的品质因数，我们得出了几种物理激励策略的性能分析表达式以及可实现误差的一般上限，该上限在特定情况下是严格的。我们的分析揭示了一种权衡：产生纯输出的策略（其中我们证明最佳策略是产生固定输出、完全去极化通道的最大纠缠净化的策略）在考虑大环境维度的策略之间表现最佳，而通常产生非纯输出的附加环境策略在小环境维度表现更好。",
+    "authors": [
+      {
+        "name": "Zoe G. del Toro"
+      },
+      {
+        "name": "Jessica Bavaresco"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Zoe G. del Toro"
+      },
+      {
+        "name": "Jessica Bavaresco"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06450",
+    "category": "quant-ph",
+    "title": "Agent Choice via Quantum Flux in Living Systems",
+    "abstract": "A basic model is provided that places active, intentional choices by biological organisms on a solid physical footing. The model is provisionally called \"Agent Choice via Quantum Flux.\" It brings to bear specific physics on living systems in a way that allows for intentional choices not pre-determined by physical laws, but remaining consistent with those laws. It does so by exploring a possible many-to-one relation of quantum states to agent choices, with a parallel to the relation of thermodynamic microstates to macrostates.",
+    "url": "https://arxiv.org/abs/2604.06450",
+    "type": "理论",
+    "summary": "提供了一个基本模型，将生物有机体主动、有意的选择置于坚实的物理基础上。该模型暂时称为“通过量子通量进行代理选择”。它以一种允许有意选择的方式对生命系统产生特定的物理作用，这种选择不是由物理定律预先确定的，而是与这些定律保持一致。它通过探索量子态与代理选择之间可能的多对一关系来实现这一点，这与热力学微观状态与宏观状态的关系类似。",
+    "authors": [
+      {
+        "name": "R. E. Kastner"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "R. E. Kastner"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.06466",
+    "category": "quant-ph",
+    "title": "One-to-one correspondence between Hierarchical Equations of Motion and Pseudomodes for Open Quantum System Dynamics",
+    "abstract": "We unite two of the most widely used approaches for strongly damped, non-Markovian open quantum dynamics, the Hierarchical Equations of Motion (HEOM) and the pseudomode method by proving two statements: First, every physical bath correlation function (BCF) that can be written as a sum of $N$ exponential terms can be obtained from a physical model with $N$ interacting pseudomodes which are damped in Lindblad form. Second, for every such BCF there exists a non-unitary, linear transformation which mirrors the evolution of the system-pseudomode state onto the HEOM hierarchy, and vice versa. Our proofs are constructive and we give explicit expressions for the mirror transformation as well as for the pseudomode Lindbladian corresponding to a given exponential BCF. This approach also gives insight and provides elegant derivations of the corresponding Hierarchy of stochastic Pure States (HOPS) method and its nearly-unitary version, nuHOPS. Our result opens several avenues for further optimization of non-Markovian open quantum system dynamics methods.",
+    "url": "https://arxiv.org/abs/2604.06466",
+    "type": "理论+数值",
+    "summary": "我们通过证明两个陈述，将两种最广泛使用的强阻尼、非马尔可夫开放量子动力学方法，即分层运动方程（HEOM）和伪模方法结合起来：首先，每个可以写成 $N$ 指数项之和的物理浴相关函数（BCF）都可以从具有 $N$ 交互伪模的物理模型获得，这些伪模以 Lindblad 形式阻尼。其次，对于每个这样的 BCF 都存在一个非单一的线性变换，它将系统伪模式状态的演化反映到 HEOM 层次结构上，反之亦然。我们的证明是建设性的，并且我们给出了镜像变换以及对应于给定指数 BCF 的伪模 Lindbladian 的显式表达式。这种方法还提供了相应的随机纯状态层次结构 (HOPS) 方法及其近乎单一版本 nuHOPS 的见解并提供了优雅的推导。我们的结果为进一步优化非马尔可夫开放量子系统动力学方法开辟了多种途径。",
+    "authors": [
+      {
+        "name": "Kai Müller"
+      },
+      {
+        "name": "Walter T. Strunz"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Kai Müller"
+      },
+      {
+        "name": "Walter T. Strunz"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06604",
+    "category": "quant-ph",
+    "title": "Quantifying magic via quantum $(α,β)$ Jensen-Shannon divergence",
+    "abstract": "Magic states play an important role in fault-tolerant quantum computation, and so the quantification of magic for quantum states is of great significance. In this work, we propose two new magic quantifiers by introducing two versions of quantum $(\\alpha,\\beta)$ Jensen-Shannon divergence based on the quantum $(\\alpha,\\beta)$ entropy and the quantum $(\\alpha,\\beta)$-relative entropy, respectively. We derive many desirable properties for our magic quantifiers, and find that they are efficiently computable in low-dimensional Hilbert spaces. We also show that the initial nonstabilizerness in the input state can boost the magic generating power for our magic quantifiers with appropriate parameter ranges for a certain class of quantum gates. Our magic quantifiers may provide new tools for addressing some specific problems in magic resource theory.",
+    "url": "https://arxiv.org/abs/2604.06604",
+    "type": "理论",
+    "summary": "魔幻态在容错量子计算中发挥着重要作用，因此量子态魔幻的量化具有重要意义。在这项工作中，我们提出了两个新的神奇量词，分别基于量子 $(\\alpha,\\beta)$ 熵和量子 $(\\alpha,\\beta)$ 相对熵引入两个版本的量子 $(\\alpha,\\beta)$ Jensen-Shannon 散度。我们为我们的神奇量词导出了许多理想的属性，并发现它们可以在低维希尔伯特空间中有效地计算。我们还表明，输入状态的初始非稳定性可以通过针对某一类量子门的适当参数范围来提高我们的魔法量词的魔法生成能力。我们的魔法量词可能会为解决魔法资源理论中的一些具体问题提供新的工具。",
+    "authors": [
+      {
+        "name": "Linmao Wang"
+      },
+      {
+        "name": "Zhaoqi Wu"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Linmao Wang"
+      },
+      {
+        "name": "Zhaoqi Wu"
+      }
+    ],
+    "author_count": 2
+  },
+  {
+    "id": "2604.06606",
+    "category": "quant-ph",
+    "title": "Enhanced Precision in Entangled Quantum Clocks with Phase Estimation Algorithm",
+    "abstract": "We present an enhanced entangled quantum clock protocol that incorporates a quantum phase estimation algorithm to directly estimate proper-time differences as an unknown phase. By employing highly entangled multi-clock states, the achievable uncertainty scales inversely with the total number of quantum clocks, surpassing the standard projection-noise limit. This approach extends the original EQC framework and provides a systematic method for high-precision relativistic time comparison.",
+    "url": "https://arxiv.org/abs/2604.06606",
+    "type": "数值",
+    "summary": "我们提出了一种增强的纠缠量子时钟协议，该协议结合了量子相位估计算法，可以直接估计本征时间差作为未知相位。通过采用高度纠缠的多时钟状态，可实现的不确定性与量子时钟的总数成反比，超过了标准投影噪声限制。该方法扩展了原有的EQC框架，为高精度相对论时间比较提供了系统的方法。",
+    "authors": [
+      {
+        "name": "Won-Young Hwang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Won-Young Hwang"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.06639",
+    "category": "quant-ph",
+    "title": "Coherence and entanglement dynamics in Shor's algorithm",
+    "abstract": "Shor's algorithm outperforms its classical counterpart in efficient prime factorization. We explore the coherence and entanglement dynamics of the evolved states within Shor's algorithm, showing that the coherence in each step relies on the dimension of register or the order, and discuss the relations between geometric coherence and geometric entanglement. We investigate how unitary operators induce variations in coherence and entanglement, and analyze the variations of coherence and entanglement within the entire algorithm, demonstrating that the overall effect of Shor's algorithm tends to deplete coherence and produce entanglement. Our research not only deepens the understanding of this algorithm but also provides methodological references for studying resource dynamics in other quantum algorithms.",
+    "url": "https://arxiv.org/abs/2604.06639",
+    "type": "理论+数值",
+    "summary": "Shor 算法在高效素因数分解方面优于其经典算法。我们探索了 Shor 算法中演化态的相干性和纠缠动力学，表明每一步的相干性依赖于寄存器的维数或顺序，并讨论了几何相干性和几何纠缠之间的关系。我们研究酉算子如何引起相干性和纠缠的变化，并分析整个算法内相干性和纠缠的变化，证明肖尔算法的整体效果倾向于消耗相干性并产生纠缠。我们的研究不仅加深了对该算法的理解，而且为研究其他量子算法中的资源动态提供了方法参考。",
+    "authors": [
+      {
+        "name": "Linlin Ye"
+      },
+      {
+        "name": "Zhaoqi Wu"
+      },
+      {
+        "name": "Shao-Ming Fei"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Linlin Ye"
+      },
+      {
+        "name": "Zhaoqi Wu"
+      },
+      {
+        "name": "Shao-Ming Fei"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06806",
+    "category": "quant-ph",
+    "title": "Perturbative hydrogenic Lamb shifts and radiative decay rates -- an so(4,2)-based algebraic approach",
+    "abstract": "It is shown that algebraic techniques based on the Lie algebra so(4,2) provide efficient tools for evaluating Lamb shifts and radiative decay rates for hydrogenic energy eigenstates as they systematically exploit the intrinsic symmetry of the hydrogenic Hamiltonian. As a main result in lowest order perturbation theory with respect to the fine-structure constant integral representations are derived for the complex-valued energy shifts of hydrogen-like ions from which Lamb shifts and radiative decay rates can be evaluated in a unified way, thus generalizing a recently discussed algebraic approach of Maclay. In order to exemplify the usefulness of this algebraic approach numerical results are presented for Lamb shifts and radiative decay rates which transcend the dipole approximation and contain the dipole approximation as a limiting case.",
+    "url": "https://arxiv.org/abs/2604.06806",
+    "type": "理论+数值",
+    "summary": "结果表明，基于李代数 so(4,2) 的代数技术为评估氢能本征态的兰姆位移和辐射衰变率提供了有效的工具，因为它们系统地利用了氢哈密顿量的固有对称性。作为关于精细结构常数积分表示的最低阶微扰理论的主要结果，导出了类氢离子的复值能量位移，从中可以以统一的方式评估兰姆位移和辐射衰变率，从而概括了最近讨论的 Maclay 代数方法。为了举例说明这种代数方法的有用性，给出了兰姆位移和辐射衰减率的数值结果，这些结果超越了偶极近似并包含偶极近似作为极限情况。",
+    "authors": [
+      {
+        "name": "Gernot Alber"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Gernot Alber"
+      }
+    ],
+    "author_count": 1
+  },
+  {
+    "id": "2604.06866",
+    "category": "quant-ph",
+    "title": "A hardware efficient quantum residual neural network without post-selection",
+    "abstract": "We propose a hardware efficient quantum residual neural network which implements residual connections through a deterministic linear combination of identity and variational unitaries, enabling fully differentiable training. In contrast to the previous implementation of residual connections, our architecture avoids post-selection while preserving residual learning. Furthermore, we establish trainability of our model, mitigating barren plateaus which are considered as a major limitation of variational quantum learning models. In order to show the working of our model, we report its application to image classification tasks by training it for MNIST, CIFAR, and SARFish datasets, achieving accuracies of 99% and 80% for binary and multi-class classifications, respectively. These accuracies are comparable to previously achieved from the standard variational models, however our model requires 10x fewer gates making it better suited for resource constraint near-term quantum processors. In addition to high accuracies, the proposed architecture also demonstrates adversarial robustness which is another desirable parameter for quantum machine learning models. Overall our architecture offers a new pathway for developing accurate, robust, trainable and hardware efficient quantum machine learning models.",
+    "url": "https://arxiv.org/abs/2604.06866",
+    "type": "理论+数值",
+    "summary": "我们提出了一种硬件高效的量子残差神经网络，它通过恒等和变分酉的确定性线性组合来实现残差连接，从而实现完全可微分的训练。与之前残差连接的实现相比，我们的架构在保留残差学习的同时避免了后选择。此外，我们建立了模型的可训练性，减轻了被认为是变分量子学习模型的主要限制的贫瘠高原。为了展示我们的模型的工作原理，我们通过针对 MNIST、CIFAR 和 SARFish 数据集进行训练来报告其在图像分类任务中的应用，二元分类和多类分类的准确率分别达到 99% 和 80%。这些精度与之前通过标准变分模型获得的精度相当，但是我们的模型需要的门数减少了 10 倍，使其更适合资源受限的近期量子处理器。除了高精度之外，所提出的架构还展示了对抗鲁棒性，这是量子机器学习模型的另一个理想参数。\n\n总体而言，我们的架构为开发准确、稳健、可训练且硬件高效的量子机器学习模型提供了一条新途径。",
+    "authors": [
+      {
+        "name": "Amena Khatun"
+      },
+      {
+        "name": "Akib Karim"
+      },
+      {
+        "name": "Muhammad Usman"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Amena Khatun"
+      },
+      {
+        "name": "Akib Karim"
+      },
+      {
+        "name": "Muhammad Usman"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.06908",
+    "category": "quant-ph",
+    "title": "Quantum Relative-alpha-Entropies: A Structural and Geometric Perspective",
+    "abstract": "Most quantum divergences derive their structure from classical f-divergences or Renyi-type constructions, a dependence that obscures several quantum geometric effects. We introduce a quantum relative-alpha-entropy that extends Umegaki's relative entropy while falling outside the f-divergence class. The proposed divergence exhibits a nonlinear convexity property, which yields a generalized convexity result for the Petz-Renyi divergence for alpha greater than one, complementing the known convexity for alpha less than one. It is additive under tensor products, invariant under unitary transformations, and depends only on the relative geometry of quantum states rather than their absolute magnitudes. Using Nussbaum-Szkola-type distributions, we also establish an exact correspondence of this divergence with classical relative-alpha-entropy. This reveals relative-alpha-entropy as a fundamentally geometric notion of quantum distinguishability not captured by existing divergence frameworks.",
+    "url": "https://arxiv.org/abs/2604.06908",
+    "type": "理论",
+    "summary": "大多数量子散度的结构源自经典的 f 散度或 Renyi 型结构，这种依赖性掩盖了几种量子几何效应。我们引入了量子相对 α 熵，它扩展了 Umegaki 的相对熵，同时落在 f 散度类别之外。所提出的散度表现出非线性凸性特性，这对于 α 大于 1 的情况产生 Petz-Renyi 散度的广义凸性结果，补充了 α 小于 1 时的已知凸性。它在张量积下是可加的，在酉变换下是不变的，并且仅取决于量子态的相对几何形状而不是它们的绝对大小。使用 Nussbaum-Szkola 型分布，我们还建立了这种散度与经典相对 α 熵的精确对应关系。这揭示了相对α熵是现有散度框架未捕获的量​​子可区分性的基本几何概念。",
+    "authors": [
+      {
+        "name": "Sayantan Roy"
+      },
+      {
+        "name": "Atin Gayen"
+      },
+      {
+        "name": "Aditi Kar Gangopadhyay"
+      },
+      {
+        "name": "Sugata Gangopadhyay"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Sayantan Roy"
+      },
+      {
+        "name": "Atin Gayen"
+      },
+      {
+        "name": "Aditi Kar Gangopadhyay"
+      },
+      {
+        "name": "Sugata Gangopadhyay"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.06931",
+    "category": "quant-ph",
+    "title": "Quantum MIMO Channel Modeling in Turbulent Free-Space Optical Links",
+    "abstract": "Free-space optical (FSO) links supporting spatial multiplexing provide a natural physical realization of Quantum MIMO channels. We develop a first-principles model for Quantum MIMO channels derived directly from wave-optical propagation through three-dimensional atmospheric turbulence. The framework explicitly accounts for intermodal crosstalk, finite detection apertures, and the system-bath separation induced by spatial-mode projection. We distinguish between distinguishable and indistinguishable photon regimes, showing that indistinguishability leads to intrinsically many-body interference effects described by matrix permanents. To obtain a completely positive and trace-preserving logical description, we introduce an erasure-extended encoding in which turbulence-induced leakage and photon loss are mapped to flagged erasure states. The resulting Quantum MIMO channel naturally reduces to a correlated n-qubit erasure channel, with correlations arising from the shared turbulent medium. Limiting regimes in which correlated Pauli channels emerge as effective approximations are also identified.",
+    "url": "https://arxiv.org/abs/2604.06931",
+    "type": "理论",
+    "summary": "支持空间复用的自由空间光 (FSO) 链路提供了量子 MIMO 通道的自然物理实现。我们开发了量子 MIMO 通道的第一原理模型，该模型直接从波光传播通过三维大气湍流导出。该框架明确考虑了模间串扰、有限检测孔径以及空间模式投影引起的系统浴分离。我们区分了可区分和不可区分的光子状态，表明不可区分性导致本质上由矩阵永久物描述的多体干涉效应。为了获得完全肯定且保留痕迹的逻辑描述，我们引入了一种擦除扩展编码，其中湍流引起的泄漏和光子损失被映射到标记的擦除状态。由此产生的量子 MIMO 信道自然地简化为相关的 n 量子位擦除信道，其中相关性源自共享的湍流介质。还确定了相关泡利通道作为有效近似出现的限制机制。",
+    "authors": [
+      {
+        "name": "Heyang Peng"
+      },
+      {
+        "name": "Seid Koudia"
+      },
+      {
+        "name": "Semih Oktay"
+      },
+      {
+        "name": "Mert Bayraktar"
+      },
+      {
+        "name": "Symeon Chatzinotas"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Heyang Peng"
+      },
+      {
+        "name": "Seid Koudia"
+      },
+      {
+        "name": "Semih Oktay"
+      },
+      {
+        "name": "Mert Bayraktar"
+      },
+      {
+        "name": "Symeon Chatzinotas"
+      }
+    ],
+    "author_count": 5
+  },
+  {
+    "id": "2604.07013",
+    "category": "quant-ph",
+    "title": "QNAS: A Neural Architecture Search Framework for Accurate and Efficient Quantum Neural Networks",
+    "abstract": "Designing quantum neural networks (QNNs) that are both accurate and deployable on NISQ hardware is challenging. Handcrafted ansatze must balance expressivity, trainability, and resource use, while limited qubits often necessitate circuit cutting. Existing quantum architecture search methods primarily optimize accuracy while only heuristically controlling quantum and mostly ignore the exponential overhead of circuit cutting. We introduce QNAS, a neural architecture search framework that unifies hardware aware evaluation, multi objective optimization, and cutting overhead awareness for hybrid quantum classical neural networks (HQNNs). QNAS trains a shared parameter SuperCircuit and uses NSGA-II to optimize three objectives jointly: (i) validation error, (ii) a runtime cost proxy measuring wall clock evaluation time, and (iii) the estimated number of subcircuits under a target qubit budget. QNAS evaluates candidate HQNNs under a few epochs of training and discovers clear Pareto fronts that reveal tradeoffs between accuracy, efficiency, and cutting overhead. Across MNIST, Fashion-MNIST, and Iris benchmarks, we observe that embedding type and CNOT mode selection significantly impact both accuracy and efficiency, with angle-y embedding and sparse entangling patterns outperforming other configurations on image datasets, and amplitude embedding excelling on tabular data (Iris). On MNIST, the best architecture achieves 97.16% test accuracy with a compact 8 qubit, 2 layer circuit; on the more challenging Fashion-MNIST, 87.38% with a 5 qubit, 2 layer circuit; and on Iris, 100% validation accuracy with a 4 qubit, 2 layer circuit. QNAS surfaces these design insights automatically during search, guiding practitioners toward architectures that balance accuracy, resource efficiency, and practical deployability on current hardware.",
+    "url": "https://arxiv.org/abs/2604.07013",
+    "type": "数值",
+    "summary": "设计既准确又可部署在 NISQ 硬件上的量子神经网络 (QNN) 具有挑战性。手工制作的模拟必须平衡表达性、可训练性和资源使用，而有限的量子位通常需要电路切割。现有的量子架构搜索方法主要优化精度，同时仅启发式控制量子，并且大多忽略电路切割的指数开销。我们推出了 QNAS，一种神经架构搜索框架，它统一了混合量子经典神经网络 (HQNN) 的硬件感知评估、多目标优化和削减开销感知。 QNAS 训练共享参数 SuperCircuit 并使用 NSGA-II 联合优化三个目标：(i) 验证误差，(ii) 测量挂钟评估时间的运行时成本代理，以及 (iii) 目标量子位预算下的估计子电路数量。 QNAS 在几个训练周期下评估候选 HQNN，并发现清晰的帕累托前沿，揭示准确性、效率和削减开销之间的权衡。\n\n在 MNIST、Fashion-MNIST 和 Iris 基准测试中，我们观察到嵌入类型和 CNOT 模式选择显着影响准确性和效率，其中角度 y 嵌入和稀疏纠缠模式在图像数据集上优于其他配置，而幅度嵌入在表格数据 (Iris) 上表现出色。在 MNIST 上，最佳架构通过紧凑的 8 量子位、2 层电路实现了 97.16% 的测试精度；在更具挑战性的 Fashion-MNIST 上，87.38% 采用 5 量子位、2 层电路；在 Iris 上，通过 4 量子位、2 层电路实现 100% 验证准确度。 QNAS 在搜索过程中自动呈现这些设计见解，指导从业者采用在当前硬件上平衡准确性、资源效率和实际可部署性的架构。",
+    "authors": [
+      {
+        "name": "Kooshan Maleki"
+      },
+      {
+        "name": "Alberto Marchisio"
+      },
+      {
+        "name": "Muhammad Shafique"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Kooshan Maleki"
+      },
+      {
+        "name": "Alberto Marchisio"
+      },
+      {
+        "name": "Muhammad Shafique"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07163",
+    "category": "quant-ph",
+    "title": "Robust and High-Fidelity Controlled Two-Qubit Gates via Asymmetric Parallel Resonant Excitation",
+    "abstract": "Implementing high-fidelity controlled two-qubit gates in dipole-dipole interacting systems, such as rare-earth-ion crystals, in hindered by spectral inhomogeneity and weak coupling. Existing method often rely on detuned pulses, making them susceptible to frequency errors and AC Stark shifts. We propose a robust resonant scheme for arbitrary controlled two-qubit gates that utilizes asymmetric excitation and pulse engineering to achieve decoupled, parallel qubit control. Simulations on rare-earth-ion ensemble qubits demonstrate gate fidelities exceeding 99% within a 170 kHz detuning range with off-resonant excitation below 0.2%. This approach offers a robust, scalable route for quantum computing in spectrally crowded systems.",
+    "url": "https://arxiv.org/abs/2604.07163",
+    "type": "数值",
+    "summary": "在偶极-偶极相互作用系统（例如稀土离子晶体）中实现高保真控制的双量子位门，受到光谱不均匀性和弱耦合的阻碍。现有方法通常依赖于失谐脉冲，这使得它们容易受到频率误差和 AC Stark 频移的影响。我们提出了一种用于任意控制的两个量子位门的鲁棒谐振方案，该方案利用不对称激励和脉冲工程来实现解耦、并行量子位控制。对稀土离子系综量子位的模拟表明，在 170 kHz 失谐范围内门保真度超过 99%，非共振激励低于 0.2%。这种方法为光谱拥挤系统中的量子计算提供了一条强大的、可扩展的途径。",
+    "authors": [
+      {
+        "name": "Licheng Lin"
+      },
+      {
+        "name": "Jize Han"
+      },
+      {
+        "name": "Peng Zhu"
+      },
+      {
+        "name": "Ziyu Wang"
+      },
+      {
+        "name": "Ying Yan"
+      },
+      {
+        "name": "Jie Lu"
+      },
+      {
+        "name": "Zhiguo Huang"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Licheng Lin"
+      },
+      {
+        "name": "Jize Han"
+      },
+      {
+        "name": "Peng Zhu"
+      },
+      {
+        "name": "Ying Yan"
+      },
+      {
+        "name": "Jie Lu"
+      },
+      {
+        "name": "Zhiguo Huang"
+      }
+    ],
+    "author_count": 7
+  },
+  {
+    "id": "2604.07178",
+    "category": "quant-ph",
+    "title": "On the Computational Complexity of Geometrically Local QAC0 circuits",
+    "abstract": "The computational complexity of $\\mathsf{QAC}^0$, which are constant-depth, polynomial-size quantum circuit families consisting of arbitrary single-qubit unitaries and $n$-qubit generalized Toffoli gates, has gained tremendous focus recently. In this work, we initiate the study of the computational complexity of geometrically local $\\mathsf{QAC}^0$ circuits, where all the generalized Toffoli gates act on nearest neighbor qubits. We show that any $\\mathsf{QAC}^0$ circuit can be exactly simulated by a two-dimensional geometrically local $\\mathsf{QAC}^0$ circuit, i.e., a $\\mathsf{2D\\text{-}QAC}^{0}$ circuit, with a quadratic size blow-up. This implies that $\\mathsf{QAC}^0 = \\mathsf{2D\\text{-}QAC}^{0}$. We further show that if there existed a $\\mathsf{QAC}^0$ circuit that computes Parity with a bounded constant error, then for any $\\varepsilon > 0$, there would exist a $\\mathsf{2D\\text{-}QAC}^{0}$ circuit that exactly computes Parity, with a very \"thin\" width $n^\\varepsilon$. We further study the computational power of $\\mathsf{1D\\text{-}QAC}^{0} $ circuits, i.e., one-dimensional $\\mathsf{QAC}^0$ circuits, which are the \"thinnest\" $\\mathsf{2D\\text{-}QAC}^{0}$ circuits. We prove a nearly logarithmic depth lower bound on $\\mathsf{1D\\text{-}QAC}^{0} $ circuits to compute the Parity function, even if allowing an unlimited number of ancilla. Furthermore, if the inputs are encoded in contiguous qubits, we prove that it requires a nearly linear depth $\\mathsf{1D\\text{-}QAC}^{0} $ circuit to compute the Parity function. This lower bound is almost tight. The results are proved via the combination of the restriction argument and the light-cone argument. These results may provide a new angle for studying the computational power of $\\mathsf{QAC}^0$ circuits and for resolving the long-standing open problem of whether Parity is in $\\mathsf{QAC}^0$.",
+    "url": "https://arxiv.org/abs/2604.07178",
+    "type": "理论",
+    "summary": "$\\mathsf{QAC}^0$ 是由任意单量子位酉和 $n$ 量子位广义 Toffoli 门组成的恒定深度、多项式大小的量子电路系列，其计算复杂性最近引起了极大的关注。在这项工作中，我们开始研究几何局部 $\\mathsf{QAC}^0$ 电路的计算复杂性，其中所有广义 Toffoli 门都作用于最近邻量子位。我们证明任何 $\\mathsf{QAC}^0$ 电路都可以通过二维几何局部 $\\mathsf{QAC}^0$ 电路精确模拟，即 $\\mathsf{2D\\text{-}QAC}^{0}$ 电路，具有二次尺寸放大。这意味着 $\\mathsf{QAC}^0 = \\mathsf{2D\\text{-}QAC}^{0}$。我们进一步表明，如果存在一个 $\\mathsf{QAC}^0$ 电路计算具有有界常数误差的奇偶校验，那么对于任何 $\\varepsilon > 0$，将存在一个 $\\mathsf{2D\\text{-}QAC}^{0}$ 电路精确计算奇偶校验，其宽度非常“薄”$n^\\varepsilon$。我们进一步研究$\\mathsf{1D\\text{-}QAC}^{0} $电路的计算能力，即一维$\\mathsf{QAC}^0$电路，它们是“最薄”的$\\mathsf{2D\\text{-}QAC}^{0}$电路。\n\n我们证明了 $\\mathsf{1D\\text{-}QAC}^{0} $ 电路上的近对数深度下界来计算奇偶校验函数，即使允许无限数量的辅助。此外，如果输入以连续的量子位编码，我们证明需要近线性深度 $\\mathsf{1D\\text{-}QAC}^{0} $ 电路来计算奇偶校验函数。这个下限几乎是紧的。通过限制论证和光锥论证的结合证明了结果。这些结果可能为研究$\\mathsf{QAC}^0$电路的计算能力以及解决$\\mathsf{QAC}^0$中是否存在Parity这一长期悬而未决的问题提供新的角度。",
+    "authors": [
+      {
+        "name": "Yangjing Dong"
+      },
+      {
+        "name": "Fengning Ou"
+      },
+      {
+        "name": "Penghui Yao"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Yangjing Dong"
+      },
+      {
+        "name": "Fengning Ou"
+      },
+      {
+        "name": "Penghui Yao"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07214",
+    "category": "quant-ph",
+    "title": "Quantum Gibbs sampling through the detectability lemma",
+    "abstract": "Gibbs state preparation is an important subroutine in quantum computing. In this work we use the detectability lemma to improve Gibbs state preparation. Specifically, we design new Gibbs state preparation methods that do not rely on simulating Lindbladian evolution, thus avoiding the overhead from it. For local Lindbladians consisting of $M$ terms, this approach reduces the cost by a factor of $O(M)$. We also combine the detectability lemma operator and quantum singular value transformation to implement ground state projection operators of frustration-free Hamiltonians, resulting in a quadratic speedup in the spectral gap dependence. Applying this method to Lindbladians for the Gibbs state of local commuting Hamiltonians, we achieve quadratically better dependence on the Lindbladian spectral gap.",
+    "url": "https://arxiv.org/abs/2604.07214",
+    "type": "理论",
+    "summary": "吉布斯态准备是量子计算中的一个重要子程序。在这项工作中，我们使用可检测性引理来改进吉布斯状态准备。具体来说，我们设计了新的吉布斯状态准备方法，该方法不依赖于模拟 Lindbladian 进化，从而避免了由此产生的开销。对于由 $M$ 项组成的本地 Lindbladians，此方法将成本降低了 $O(M)$ 倍。我们还结合了可检测性引理算子和量子奇异值变换来实现无挫败哈密顿量的基态投影算子，从而导致光谱间隙依赖性的二次加速。将此方法应用于本地通勤哈密顿量的吉布斯状态的 Lindbladians，我们实现了对 Lindbladian 谱间隙的二次更好的依赖性。",
+    "authors": [
+      {
+        "name": "Di Fang"
+      },
+      {
+        "name": "Jianfeng Lu"
+      },
+      {
+        "name": "Yu Tong"
+      },
+      {
+        "name": "Chu Zhao"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Di Fang"
+      },
+      {
+        "name": "Jianfeng Lu"
+      },
+      {
+        "name": "Yu Tong"
+      },
+      {
+        "name": "Chu Zhao"
+      }
+    ],
+    "author_count": 4
+  },
+  {
+    "id": "2604.07235",
+    "category": "quant-ph",
+    "title": "Fock State Generation and SWAP using a Rabi-Driven Qubit",
+    "abstract": "The deterministic generation and SWAP of Fock states in isolated high-Q modes form a core foundation for architectures in bosonic quantum computing. Conventionally, these operations necessitate strong coupling to a qubit, which inherently compromises the required cavity isolation. To address this trade-off, we introduce a tunable mechanism wherein a weakly coupled qubit, which preserves mode isolation, is driven to induce a strong interaction on demand. By leveraging a Rabi-driven, qubit-mediated sideband interaction, we realize on-demand Jaynes-Cummings coupling between a transmon and a long-lived cavity mode. Using a superconducting flute cavity with two high-Q modes, we deterministically demonstrate Fock state preparation up to n=5 at operation times of less than 2 microseconds per photon. We also demonstrate and characterize single-photon SWAP in approximately 2 microseconds. Finally, we adapt our SWAP method to generate a dual-rail Bell state. While current performance is constrained by baseline coherence rather than fundamental methodological limits, the protocol scales inherently to accommodate higher photon numbers and faster operational regimes. By enabling complex operations on modes that remain strictly weakly coupled to qubits, this approach establishes a robust pathway for advancing scalable bosonic quantum computing.",
+    "url": "https://arxiv.org/abs/2604.07235",
+    "type": "理论",
+    "summary": "隔离高 Q 模式下 Fock 态的确定性生成和交换构成了玻色子量子计算架构的核心基础。传统上，这些操作需要与量子位的强耦合，这本质上会损害所需的腔隔离。为了解决这种权衡问题，我们引入了一种可调机制，其中驱动保持模式隔离的弱耦合量子位以按需引发强相互作用。通过利用拉比驱动、量子位介导的边带相互作用，我们实现了传输模式和长寿命腔模式之间的按需 Jaynes-Cummings 耦合。使用具有两种高 Q 模式的超导凹槽腔，我们确定性地演示了在每个光子小于 2 微秒的操作时间下高达 n=5 的 Fock 态准备。我们还在大约 2 微秒内演示并表征了单光子交换。最后，我们采用 SWAP 方法来生成双轨贝尔状态。虽然当前的性能受到基线相干性而不是基本方法限制的限制，但该协议本质上可以扩展以适应更高的光子数量和更快的操作机制。\n\n通过在与量子位严格弱耦合的模式上启用复杂的操作，这种方法为推进可扩展的玻色子量子计算建立了一条强大的途径。",
+    "authors": [
+      {
+        "name": "Natan Karaev"
+      },
+      {
+        "name": "Eliya Blumenthal"
+      },
+      {
+        "name": "Shay Hacohen-Gourgy"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Natan Karaev"
+      },
+      {
+        "name": "Eliya Blumenthal"
+      },
+      {
+        "name": "Shay Hacohen-Gourgy"
+      }
+    ],
+    "author_count": 3
+  },
+  {
+    "id": "2604.07257",
+    "category": "quant-ph",
+    "title": "Quantifying and detecting quantum-state texture",
+    "abstract": "Quantum-state texture is a recently proposed quantum resource that characterizes the inhomogeneity of a quantum state's matrix element distribution in the computational basis, enriching our understanding of quantum state structure. To expand its quantification toolkit and establish detection methods, in this article, we investigate the resource theory of texture from both quantitative and detection perspectives. First, we construct a texture measure $\\mathcal{T}^{\\text{GR}}_{\\alpha,z}(\\rho)$ based on the $\\alpha$-$z$ Rényi relative entropy and present some of its inherent properties. Second, we analyze the mathematical relationships between several existing texture measures, revealing connections among different quantifiers. Finally, drawing on the witness concept from other resource theories, we systematically introduce texture witnesses into the texture theory and provide examples of texture witnesses with special properties.",
+    "url": "https://arxiv.org/abs/2604.07257",
+    "type": "理论",
+    "summary": "量子态纹理是最近提出的一种量子资源，它在计算基础上表征了量子态矩阵元素分布的不均匀性，丰富了我们对量子态结构的理解。为了扩展其量化工具包并建立检测方法，在本文中，我们从定量和检测的角度研究了纹理的资源理论。首先，我们基于 $\\alpha$-$z$ Rényi 相对熵构建纹理度量 $\\mathcal{T}^{\\text{GR}}_{\\alpha,z}(\\rho)$ 并呈现其一些固有属性。其次，我们分析了几种现有纹理度量之间的数学关系，揭示了不同量词之间的联系。最后，借鉴其他资源理论中的见证概念，我们将纹理见证系统地引入到纹理理论中，并提供了具有特殊属性的纹理见证的例子。",
+    "authors": [
+      {
+        "name": "Xiangyu Chen"
+      },
+      {
+        "name": "Qiang Lei"
+      }
+    ],
+    "featured_authors": [
+      {
+        "name": "Xiangyu Chen"
+      },
+      {
+        "name": "Qiang Lei"
+      }
+    ],
+    "author_count": 2
+  }
+]
