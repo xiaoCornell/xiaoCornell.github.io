@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-06-22T17:50:25+00:00",
+  "synced_at": "2026-06-26T18:27:59+00:00",
   "author": {
     "recid": "2163140",
     "name": "Xiao Wang",
@@ -7,7 +7,7 @@
     "orcid": "0000-0003-2898-3355",
     "profile_url": "https://inspirehep.net/authors/2163140?ui-citation-summary=true"
   },
-  "publication_count": 14,
+  "publication_count": 15,
   "peer_reviewed_count": 11,
   "publications": [
     {
@@ -35,12 +35,32 @@
       ]
     },
     {
+      "recid": "3173174",
+      "title": "Cultivating logical catalysts for fault-tolerant dyadic phase rotations",
+      "year": "2026",
+      "authors_html": "Yichen Xu, <strong>Xiao Wang</strong>",
+      "venue": "arXiv:2606.27358",
+      "citation_count": 0,
+      "peer_reviewed": false,
+      "sort_date": "2026-06-25",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2606.27358"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/3173174"
+        }
+      ]
+    },
+    {
       "recid": "3123648",
       "title": "Controlled jump in the Clifford hierarchy",
       "year": "2026",
       "authors_html": "Yichen Xu, <strong>Xiao Wang</strong>",
       "venue": "arXiv:2602.22201",
-      "citation_count": 4,
+      "citation_count": 5,
       "peer_reviewed": false,
       "sort_date": "2026-02-25",
       "links": [
@@ -224,7 +244,7 @@
       "year": "2023",
       "authors_html": "<strong>Xiao Wang</strong>, Linhao Li, Jianda Wu",
       "venue": "arXiv:2306.11446",
-      "citation_count": 10,
+      "citation_count": 11,
       "peer_reviewed": false,
       "sort_date": "2023-06-20",
       "links": [
