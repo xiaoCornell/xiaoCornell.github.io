@@ -72,7 +72,16 @@ def fetch_literature_records(bai: str) -> list[dict]:
     if not results:
         raise RuntimeError("INSPIRE literature query returned no records; refusing to overwrite publications page.")
 
-    return results
+    return [fetch_literature_record_detail(record) for record in results]
+
+
+def fetch_literature_record_detail(record: dict) -> dict:
+    metadata = record.get("metadata", {})
+    recid = str(metadata.get("control_number") or record.get("id") or "")
+    if not recid:
+        return record
+
+    return fetch_json(f"{LITERATURE_API}/{recid}")
 
 
 def display_name(raw_name: str) -> str:
@@ -135,26 +144,33 @@ def extract_preprint_date(metadata: dict) -> dt.date | None:
 
 
 def extract_publication_date(metadata: dict) -> dt.date | None:
-    candidates: list[dt.date] = []
+    exact_candidates: list[dt.date] = []
+    fallback_candidates: list[dt.date] = []
 
     for imprint in metadata.get("imprints", []):
         parsed = parse_partial_date(imprint.get("date"), end_of_period=True)
         if parsed:
-            candidates.append(parsed)
+            exact_candidates.append(parsed)
 
     for info in metadata.get("publication_info", []):
-        for key in ("publication_date", "pubdate", "year"):
+        for key in ("publication_date", "pubdate"):
             parsed = parse_partial_date(info.get(key), end_of_period=True)
             if parsed:
-                candidates.append(parsed)
+                exact_candidates.append(parsed)
+
+        parsed_year = parse_partial_date(info.get("year"), end_of_period=True)
+        if parsed_year:
+            fallback_candidates.append(parsed_year)
 
         freetext = info.get("pubinfo_freetext")
         if freetext:
             match = re.search(r"\((\d{4})\)\s*$", str(freetext))
             if match:
-                candidates.append(dt.date(int(match.group(1)), 12, 31))
+                fallback_candidates.append(dt.date(int(match.group(1)), 12, 31))
 
-    return max(candidates) if candidates else None
+    if exact_candidates:
+        return max(exact_candidates)
+    return max(fallback_candidates) if fallback_candidates else None
 
 
 def is_current_author(author: dict, bai: str) -> bool:
