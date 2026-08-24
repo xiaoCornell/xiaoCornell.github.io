@@ -1,5 +1,5 @@
 {
-  "synced_at": "2026-08-17T13:53:13+00:00",
+  "synced_at": "2026-08-24T14:03:03+00:00",
   "author": {
     "recid": "2163140",
     "name": "Xiao Wang",
@@ -7,9 +7,29 @@
     "orcid": "0000-0003-2898-3355",
     "profile_url": "https://inspirehep.net/authors/2163140?ui-citation-summary=true"
   },
-  "publication_count": 15,
+  "publication_count": 16,
   "peer_reviewed_count": 11,
   "publications": [
+    {
+      "recid": "3193805",
+      "title": "Universal meson spectra near $(1+1)$-dimensional Ising criticality",
+      "year": "2026",
+      "authors_html": "Xiao Wang, Jianda Wu",
+      "venue": "arXiv:2608.20221",
+      "citation_count": 0,
+      "peer_reviewed": false,
+      "sort_date": "2026-08-20",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2608.20221"
+        },
+        {
+          "label": "INSPIRE",
+          "url": "https://inspirehep.net/literature/3193805"
+        }
+      ]
+    },
     {
       "recid": "3173174",
       "title": "Cultivating logical catalysts for fault-tolerant dyadic phase rotations",
@@ -124,7 +144,7 @@
       "year": "2025",
       "authors_html": "Xiao Wang, Xiaodong He, Jianda Wu",
       "venue": "Phys. Rev. B 112, L201102 (2025)",
-      "citation_count": 4,
+      "citation_count": 6,
       "peer_reviewed": true,
       "sort_date": "2025-11-04",
       "links": [
@@ -172,7 +192,7 @@
       "year": "2024",
       "authors_html": "Xiao Wang, Masaki Oshikawa, Márton Kormos, Jianda Wu",
       "venue": "Phys. Rev. B 110, 195101 (2024)",
-      "citation_count": 6,
+      "citation_count": 8,
       "peer_reviewed": true,
       "sort_date": "2024-11-01",
       "links": [
@@ -196,7 +216,7 @@
       "year": "2024",
       "authors_html": "Xiao Wang, Konrad Puzniak, Karin Schmalzl, Christian Balz, Masaaki Matsuda, Akira Okutani, Masayuki Hagiwara, Jie Ma, Jianda Wu, Bella Lake",
       "venue": "Sci.Bull. 69 2885 (2024)",
-      "citation_count": 11,
+      "citation_count": 12,
       "peer_reviewed": true,
       "sort_date": "2024-07-26",
       "links": [
@@ -240,7 +260,7 @@
       "year": "2023",
       "authors_html": "Jiahao Yang, Xiao Wang, Jianda Wu",
       "venue": "J.Phys.A 56 013001 (2023)",
-      "citation_count": 10,
+      "citation_count": 11,
       "peer_reviewed": true,
       "sort_date": "2023-01-13",
       "links": [
@@ -284,7 +304,7 @@
       "year": "2021",
       "authors_html": "Haiyuan Zou, Y. Cui, X. Wang, Z. Zhang, J. Yang, G. Xu, A. Okutani, M. Hagiwara, M. Matsuda, G. Wang, G. Mussardo, K. Hódsági, et al.",
       "venue": "Phys. Rev. Lett. 127, 077201 (2021)",
-      "citation_count": 44,
+      "citation_count": 46,
       "peer_reviewed": true,
       "sort_date": "2021-12-31",
       "links": [
@@ -308,7 +328,7 @@
       "year": "2021",
       "authors_html": "Xiao Wang, Haiyuan Zou, Kristóf Hódsági, Márton Kormos, Gábor Takács, Jianda Wu",
       "venue": "Phys. Rev. B 103, 235117 (2021)",
-      "citation_count": 20,
+      "citation_count": 21,
       "peer_reviewed": true,
       "sort_date": "2021-06-10",
       "links": [
@@ -332,7 +352,7 @@
       "year": "2020",
       "authors_html": "Zhao Zhang, Kirill Amelin, Xiao Wang, Haiyuan Zou, Jiahao Yang, Urmas Nagel, Toomas Rõõm, Tusharkanti Dey, Agustinus Agung Nugroho, Thomas Lorenz, Jianda Wu, Zhe Wang",
       "venue": "Phys. Rev. B 101, 220411 (2020)",
-      "citation_count": 35,
+      "citation_count": 36,
       "peer_reviewed": true,
       "sort_date": "2020-06-26",
       "links": [
